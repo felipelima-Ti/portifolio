@@ -1,13 +1,13 @@
 "use client";
 
-import { FaReact, FaPython, FaGithub } from "react-icons/fa";
+import { FaReact, FaPython} from "react-icons/fa";
 import { SiJavascript, SiMysql, SiFirebase, SiTypescript } from "react-icons/si";
 import { motion } from "framer-motion";
 import { useState,useEffect } from "react";
 import Image from "next/image";
 import { useReveal } from "@/app/hooks/useReveal";
 import Link from "next/link";
-
+import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Portfolio() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -15,7 +15,7 @@ const revealRef = useReveal();
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-
+  
   const handleSubmit = async (e) => {
   e.preventDefault();
 
@@ -77,7 +77,7 @@ const revealRef = useReveal();
           transition={{ duration: 0.2 }}
           className="text-4xl md:text-6xl font-bold mt-20"
         >
-          Meu Portfólio
+          Felipe lima dev 
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
@@ -85,7 +85,7 @@ const revealRef = useReveal();
           transition={{ delay: 0.2, duration: 0.7 }}
           className="text-gray-300 mt-4 text-lg"
         >
-          Desenvolvedor focado em criar soluções modernas, rápidas e funcionais.
+          Desenvolvedor Full Stack focado em criar soluções modernas, rápidas e funcionais.
         </motion.p>
       </section>
 
@@ -110,9 +110,9 @@ const revealRef = useReveal();
       viewport={{ once: true }}
       className="text-gray-300 leading-relaxed mb-6"
     >
-      Sou um desenvolvedor apaixonado por tecnologia e soluções inteligentes.
+      Ola... eu sou o felipe Desenvolvedor apaixonado por tecnologia e soluções inteligentes.
       Trabalho com foco em performance, responsividade e boa experiência do usuário.
-      <br></br>atualmente sou estudante de ciencias da computação na Estacio e busco sempre me atualizar com as<br></br>
+      <br></br>atualmente sou estudante de ciencias da computação na Estacio e busco sempre me atualizar com as
       novas tecnologias do mercado para entregar o melhor resultado possível em cada projeto.
       tenho experiência com diversas tecnologias<br></br><br></br>React, TypeScript, Tailwind CSS, JavaScript, Python, MySQL e Firebase.<br></br>
       
@@ -277,7 +277,24 @@ Tecnologias usadas: NextJS, JavaScript, Tailwind CSS, Firebase.
           className="text-3xl font-semibold mb-10"
         >
           Entre em Contato
+          
         </motion.h2>
+        <p> Pelo Email: <b>Felipelima1114@gmail.com</b></p><br></br>
+        Redes sociais:<br></br>
+        <div className="flex m-5 mb-10">
+        <a href="https://www.linkedin.com/in/felipe-de-lima-belisario/" className="text-blue-400 hover:underline">Linkedin 
+         <FaLinkedin size={24} className="text-blue-700" />
+        </a><br></br>
+        <a href="https://github.com/felipelima-Ti" className="pl-5 hover:underline">Github
+          <FaGithub size={24} className="text-white hover:underline"/>
+        </a><br></br>
+        <a href="https://www.instagram.com/felipelimahbl" className="text-pink-400 hover:underline pl-5">Instagram
+          <FaInstagram size={24} className="text-pink-600" />
+        </a><br></br>
+        <a href="https://wa.me/5532988934044" className="text-green-400 hover:underline pl-5">WhatsApp
+          <FaWhatsapp size={24} className="text-green-600" />
+        </a>
+        </div>
           <p className="mb-20">Envia-me uma mensagem preenchendo o formulario abaixo com sua informaçoes e eu irei de responder o mais breve possivel
           em ate 24 horas uteis.
           </p>
