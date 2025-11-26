@@ -217,53 +217,64 @@ export default function Portfolio() {
         {/* PROJETOS */}
         <section id="projects" className="py-10">
           <h2 className="text-4xl font-bold mb-10 text-center">Projetos</h2>
-          <div className=" grid grid-cols-1 md:grid-cols-3 gap-2">
-            <div className=" bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20">
-              <img src="/port1.png" alt="Projeto 1" className="rounded-xl w-full h-70 object-cover mb-4" />
-              <h3 className="text-2xl font-semibold mb-2">Self checkout para restaurantes</h3>
-              <p className="text-white/70 mb-4">Um sistema completo de self checkout para pedidos,com o
-                <br></br>
-                cardápio dinâmico, carrinho de compras e checkout integrado.
-                <br></br>
-                Ideal para delivery de pizza, lanches ou qualquer outro tipo de comida.
-                <br></br>
-                <br></br><br></br>
-                Tecnologias usadas: NextJS, TypeScript, Tailwind CSS, Prisma.
-              </p>
-              <a href="https://restaurante-yw2v.vercel.app/" className="px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition">Acessar Projeto</a>
-            </div>
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+  <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
+    <img src="/port1.png" alt="Projeto 1" className="rounded-xl w-full h-70 object-cover mb-4" />
+    <h3 className="text-2xl font-semibold mb-2">Self checkout para restaurantes</h3>
+    <p className="text-white/70 mb-4">
+      Um sistema completo de self checkout para pedidos,<br />
+      com o sistema integrado para delivery e retirada no local,<br />
+      cardápio dinâmico, carrinho de compras e checkout integrado.<br />
+      Ideal para delivery de pizza, lanches ou qualquer outro tipo de comida.<br /><br />
+      Tecnologias usadas: NextJS, TypeScript, Tailwind CSS, Prisma.
+    </p>
+
+    <a
+      href="https://restaurante-yw2v.vercel.app/"
+      className=" w-40 mt-auto px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition"
+    >
+      Acessar Projeto
+    </a>
+  </div>
 
 
-            <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20">
-              <img src="/port4.png" alt="Projeto 2" className="rounded-xl w-full h-70 object-cover mb-4" />
-              <h3 className="text-2xl font-semibold mb-2">Help desk para empresas</h3>
-              <p className="text-white/70 mb-4 ">Um sistema de help Desk de chamados para grande empresas
+  <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col h-full">
+    <img src="/port4.png" alt="Projeto 2" className="rounded-xl w-full h-70 object-cover mb-4" />
+    <h3 className="text-2xl font-semibold mb-2">Help desk para empresas</h3>
+    <p className="text-white/70 mb-4">
+      Um sistema de help Desk de chamados para grande empresas<br />
+      perfeito para controle de demandas,
+      resolução rápida de problemas,
+      fornecendo suporte técnico e atendimento ao cliente de forma eficaz e eficiente.<br /><br />
+      Tecnologias usadas: ReactJS, JavaScript, Tailwind CSS, Firebase.
+    </p>     
+    <a
+      href="https://project-chamados.netlify.app/"
+      className="w-40 px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition"
+    >
+      Acessar Projeto
+    </a>
+  </div>
 
-                perfeito para controle de demandas,
 
-                resoluçao rapida de problemas,
+  <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col h-full">
+    <img src="/port3.png" alt="Projeto 3" className="rounded-xl w-full h-70 object-cover mb-4" />
+    <h3 className="text-2xl font-semibold mb-2">Clinica estetica</h3>
+    <p className="text-white/70 mb-4">
+      Um sistema de agendamento de atendimento de clientes clínica de estética com
+      agendamento, login, consulta de agendamentos e canal de suporte.
+      perfeito para clinicas de estetica com sistema de agendamento por whatsapp tambem<br></br><br></br>
+      Tecnologias usadas: NextJS, JavaScript, Tailwind CSS, Firebase.
+    </p>
 
-                fornecendo suporte técnico e atendimento ao cliente
-                <br></br><br></br><br></br>
-                Tecnologias usadas: ReactJS, JavaScript, CSS, Firebase.
-              </p>
-              <a href="https://project-chamados.netlify.app/" className="px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition">Acessar Projeto</a>
-            </div>
-            <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20">
-              <img src="/port3.png" alt="Projeto 3" className="rounded-xl w-full h-70 object-cover mb-4" />
-              <h3 className="text-2xl font-semibold mb-2">Clinica estetica</h3>
-              <p className="text-white/70 mb-4">Um sistema SaaS de agendamento de atendimento de clientes em uma clinica de estetica sistema com implementaçoes com
-                Agendamento de atendimentos,
-                Login de usuario,
-                Consulta de agendamentos do cliente,
-                Canal de Suporte e atendimento
-                <br></br><br></br>
-                Tecnologias usadas: NextJS, JavaScript, Tailwind CSS, Firebase.
-              </p>
-              <a href="https://clinica-estetica-seven.vercel.app/" className="px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition">Acessar Projeto</a>
-            </div>
-
-          </div>
+    <a
+      href="https://clinica-estetica-seven.vercel.app/"
+      className=" w-40 mt-auto px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition"
+    >
+      Acessar Projeto
+    </a>
+  </div>
+</div>
         </section>
         <hr className="w-full border-t border-gray-500"></hr>
 
