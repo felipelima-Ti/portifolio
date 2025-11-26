@@ -141,7 +141,7 @@ export default function Portfolio() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ staggerChildren: 0.15 }}
-          className=" ml-50 grid grid-cols-3 md:grid-cols-6 gap-6 "
+          className=" ml-40 grid grid-cols-3 md:grid-cols-6 gap-6 "
         >
           {[SiNextdotjs, SiJavascript, SiTypescript, FaPython, SiMysql, SiFirebase].map(
             (Icon, i) => (
