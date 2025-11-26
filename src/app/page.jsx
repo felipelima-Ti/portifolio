@@ -1,7 +1,7 @@
 "use client";
 
 import { FaReact, FaPython } from "react-icons/fa";
-import { SiJavascript, SiMysql, SiFirebase, SiTypescript } from "react-icons/si";
+import { SiJavascript, SiMysql, SiFirebase, SiTypescript, SiNextdotjs } from "react-icons/si";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -113,7 +113,7 @@ export default function Portfolio() {
               Trabalho com foco em performance, responsividade e boa experiência do usuário.
               <br></br>atualmente sou estudante de ciencias da computação na Estacio e busco sempre me atualizar com as
               novas tecnologias do mercado para entregar o melhor resultado possível em cada projeto.
-              tenho experiência com diversas tecnologias<br></br><br></br>React, TypeScript, Tailwind CSS, JavaScript, Python, MySQL e Firebase.<br></br>
+              tenho experiência com diversas tecnologias<br></br><br></br>Next.js, TypeScript, Tailwind CSS, JavaScript, Python, MySQL e Firebase.<br></br>
 
             </motion.p>
             <Link href="#projects">
@@ -143,7 +143,7 @@ export default function Portfolio() {
           transition={{ staggerChildren: 0.15 }}
           className=" ml-50 grid grid-cols-3 md:grid-cols-6 gap-6 "
         >
-          {[FaReact, SiJavascript, SiTypescript, FaPython, SiMysql, SiFirebase].map(
+          {[SiNextdotjs, SiJavascript, SiTypescript, FaPython, SiMysql, SiFirebase].map(
             (Icon, i) => (
               <motion.div
                 key={i}
