@@ -42,3 +42,4 @@ next-env.d.ts
 
 /assets/icons/sprite.svg
 /api/suporte
+firebase.js
