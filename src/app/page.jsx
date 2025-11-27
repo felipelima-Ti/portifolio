@@ -289,7 +289,7 @@ export default function Portfolio() {
             viewport={{ once: true }}
             className="text-3xl font-semibold mb-10"
           >
-            get in touch
+            Get in Touch
 
           </motion.h2>
           <p> For E-mail: <b>Felipelima1114@gmail.com</b></p><br></br>
@@ -341,7 +341,7 @@ export default function Portfolio() {
               type="submit"
               className="w-full py-3 rounded-xl bg-white text-black font-bold hover:bg-gray-300 transition mb-20"
             >
-              to send
+              To Send
             </button>
           </form>
         </section>
