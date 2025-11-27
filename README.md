@@ -23,7 +23,7 @@
 
 ## Contato rápido
 
-<a href="mailto:felipelima1114@gmail.com?subject=Contato%20via%20GitHub&body=Olá!+Estou+vindo+do+seu+GitHub,+podemos+conversar?">
+<a href="mailto: felipelima1114@gmail.com?subject=Contato%20via%20GitHub&body=Olá!+Estou+vindo+do+seu+GitHub,+podemos+conversar?">
   <img src="https://img.shields.io/badge/Enviar%20Mensagem-FF5722?style=for-the-badge" />
 </a>
 
