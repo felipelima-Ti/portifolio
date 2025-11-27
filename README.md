@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header&text=Felipe+lima+Dev &fontSize=40" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header&text=Felipe+lima+Dev&fontSize=40" />
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?color=00bfff&size=25&center=true&vCenter=true&width=600&lines=Desenvolvedor+Full+Stack!)
 
