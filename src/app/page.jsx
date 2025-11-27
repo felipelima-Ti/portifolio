@@ -2,7 +2,7 @@
 
 import { FaPython } from "react-icons/fa";
 import { SiJavascript, SiMysql, SiTypescript, SiNextdotjs, SiFirebase } from "react-icons/si";
-import { motion, useAnimation } from "framer-motion";
+import { motion} from "framer-motion";
 import { useState } from "react";
 import Image from "next/image";
 import { useReveal } from "@/app/hooks/useReveal";
