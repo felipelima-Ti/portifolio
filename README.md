@@ -2,7 +2,7 @@
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?color=00bfff&size=25&center=true&vCenter=true&width=600&lines=Desenvolvedor+Full+Stack!)
 
-## 📸 Sobre mim
+## Sobre mim
 <img src="https://github.com/SEU-USER/SEU-REPO/blob/main/minha-foto.png" width="150" />
 
 <p style="color:#00bfff;">Desenvolvedor apaixonado por tecnologia e criação.</p>
