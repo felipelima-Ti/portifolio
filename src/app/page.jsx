@@ -1,15 +1,26 @@
 "use client";
 
-import { FaReact, FaPython } from "react-icons/fa";
-import { SiJavascript, SiMysql,SiTypescript, SiNextdotjs,SiFirebase } from "react-icons/si";
-import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { FaPython } from "react-icons/fa";
+import { SiJavascript, SiMysql, SiTypescript, SiNextdotjs, SiFirebase } from "react-icons/si";
+import { motion, useAnimation } from "framer-motion";
+import { useState } from "react";
 import Image from "next/image";
 import { useReveal } from "@/app/hooks/useReveal";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export default function Portfolio() {
+  function AnimatedBar({ percent }) {
+    return (
+      <motion.div
+        initial={{ width: 0 }}
+        whileInView={{ width: `${percent}%` }}
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        className="h-4 rounded-full bg-gradient-to-r from-purple-400 via-purple-500 to-blue-800"
+      />
+    );
+  }
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const revealRef = useReveal();
   const handleChange = (e) => {
@@ -29,8 +40,6 @@ export default function Portfolio() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     });
-
-
 
     const result = await res.json();
     console.log(result);
@@ -90,7 +99,6 @@ export default function Portfolio() {
 
         {/* SOBRE MIM */}
         <section id="sobre" className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-30">
-
           <div className="flex-1">
             <motion.h2
               variants={fadeSlide}
@@ -107,12 +115,11 @@ export default function Portfolio() {
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
-              className="text-gray-300 leading-relaxed mb-6"
-            >
-             Hi... I'm Felipe, a developer passionate about technology and smart solutions
+              className="text-gray-300 leading-relaxed mb-6">
+              Hi... I'm Felipe, a developer passionate about technology and smart solutions
               I work focusing on performance, responsiveness, and a good user experience
               <br></br>I am currently a computer science student at Estácio and I always seek to update myself with the latest technologies on the market to deliver the best possible result in each project
-I have experience with various technologies.<br></br><br></br>Next.js, TypeScript, Tailwind CSS, JavaScript, Python, MySQL e Firebase.<br></br>
+              I have experience with various technologies.<br></br><br></br>Next.js, TypeScript, Tailwind CSS, JavaScript, Python, MySQL e Firebase.<br></br>
 
             </motion.p>
             <Link href="#projects">
@@ -142,7 +149,7 @@ I have experience with various technologies.<br></br><br></br>Next.js, TypeScrip
           transition={{ staggerChildren: 0.15 }}
           className=" ml-30 grid grid-cols-6 md:grid-cols-6 gap-6 mr-2 "
         >
-          {[SiNextdotjs, SiJavascript, SiTypescript, FaPython, SiMysql, SiFirebase ].map(
+          {[SiNextdotjs, SiJavascript, SiTypescript, FaPython, SiMysql, SiFirebase].map(
             (Icon, i) => (
               <motion.div
                 key={i}
@@ -194,10 +201,7 @@ I have experience with various technologies.<br></br><br></br>Next.js, TypeScrip
                 </div>
 
                 <div className="w-full h-4 bg-white/10 rounded-full">
-                  <div
-                    className="h-4 rounded-full bg-gradient-to-r from-purple-400 via-purple-500 to-blue-800 transition-all"
-                    style={{ width: `${t.percent}%` }}
-                  />
+                  <AnimatedBar percent={t.percent} />
                 </div>
 
                 <p className="text-xs text-gray-400 mt-2">
@@ -206,7 +210,7 @@ I have experience with various technologies.<br></br><br></br>Next.js, TypeScrip
                     : t.percent >= 80
                       ? " Advanced Level: Capable of handling complex tasks independently."
                       : " Mid-Level: Solid experience for technical roles and continuous growth."}
-                     
+
                 </p>
               </motion.div>
             ))}
@@ -216,63 +220,63 @@ I have experience with various technologies.<br></br><br></br>Next.js, TypeScrip
         {/* PROJETOS */}
         <section id="projects" className="py-10">
           <h2 className="text-4xl font-bold mb-10 text-center">Projects</h2>
-         <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-  <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
-    <img src="/port1.png" alt="Projeto 1" className="rounded-xl w-full h-70 object-cover mb-4" />
-    <h3 className="text-2xl font-semibold mb-2">Self checkout for restaurants</h3>
-    <p className="text-white/70 mb-4">
-      A complete self-checkout system for orders,<br />
-      with an integrated system for delivery and in-store pickup,<br />
-      dynamic menu, shopping cart, and integrated checkout.<br />
-      Ideal for delivering pizza, snacks, or any other type of food.<br /><br />  
-      Technologies used: NextJS, TypeScript, Tailwind CSS, Prisma.
-    </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+            <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
+              <img src="/port1.png" alt="Projeto 1" className="rounded-xl w-full h-70 object-cover mb-4" />
+              <h3 className="text-2xl font-semibold mb-2">Self checkout for restaurants</h3>
+              <p className="text-white/70 mb-4">
+                A complete self-checkout system for orders,<br />
+                with an integrated system for delivery and in-store pickup,<br />
+                dynamic menu, shopping cart, and integrated checkout.<br />
+                Ideal for delivering pizza, snacks, or any other type of food.<br /><br />
+                Technologies used: NextJS, TypeScript, Tailwind CSS, Prisma.
+              </p>
 
-    <a
-      href="https://restaurante-yw2v.vercel.app/"
-      className=" w-40 mt-auto px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition"
-    >
-      Access
-    </a>
-  </div>
-
-
-  <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col h-full">
-    <img src="/port4.png" alt="Projeto 2" className="rounded-xl w-full h-70 object-cover mb-4" />
-    <h3 className="text-2xl font-semibold mb-2">Help desk for companies</h3>
-    <p className="text-white/70 mb-4">
-      A help desk ticketing system for large companies<br/>
-      perfect for demand control,
-      quick problem resolution,
-      providing technical support and customer service in an effective and efficient manner.<br /><br /><br></br>
-      Technologies used: ReactJS, JavaScript, Tailwind CSS, Firebase.
-    </p>     
-    <a
-      href="https://project-chamados.netlify.app/"
-      className="w-40 px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition"
-    >
-      Access
-    </a>
-  </div>
+              <a
+                href="https://restaurante-yw2v.vercel.app/"
+                className=" w-40 mt-auto px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition"
+              >
+                Access
+              </a>
+            </div>
 
 
-  <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col h-full">
-    <img src="/port3.png" alt="Projeto 3" className="rounded-xl w-full h-70 object-cover mb-4" />
-    <h3 className="text-2xl font-semibold mb-2">beauty clinic</h3>
-    <p className="text-white/70 mb-4">
-     A client appointment scheduling system for aesthetic clinics with scheduling, login, appointment consultation, and support channel.
-      Perfect for aesthetic clinics with a scheduling system via WhatsApp as well.<br></br><br></br>
-      Technologies used: NextJS, JavaScript, Tailwind CSS, Firebase.
-    </p>
+            <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col h-full">
+              <img src="/port4.png" alt="Projeto 2" className="rounded-xl w-full h-70 object-cover mb-4" />
+              <h3 className="text-2xl font-semibold mb-2">Help desk for companies</h3>
+              <p className="text-white/70 mb-4">
+                A help desk ticketing system for large companies<br />
+                perfect for demand control,
+                quick problem resolution,
+                providing technical support and customer service in an effective and efficient manner.<br /><br /><br></br>
+                Technologies used: ReactJS, JavaScript, Tailwind CSS, Firebase.
+              </p>
+              <a
+                href="https://project-chamados.netlify.app/"
+                className="w-40 px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition"
+              >
+                Access
+              </a>
+            </div>
 
-    <a
-      href="https://clinica-estetica-seven.vercel.app/"
-      className=" w-40 mt-auto px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition"
-    >
-      Access
-    </a>
-  </div>
-</div>
+
+            <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col h-full">
+              <img src="/port3.png" alt="Projeto 3" className="rounded-xl w-full h-70 object-cover mb-4" />
+              <h3 className="text-2xl font-semibold mb-2">beauty clinic</h3>
+              <p className="text-white/70 mb-4">
+                A client appointment scheduling system for aesthetic clinics with scheduling, login, appointment consultation, and support channel.
+                Perfect for aesthetic clinics with a scheduling system via WhatsApp as well.<br></br><br></br>
+                Technologies used: NextJS, JavaScript, Tailwind CSS, Firebase.
+              </p>
+
+              <a
+                href="https://clinica-estetica-seven.vercel.app/"
+                className=" w-40 mt-auto px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition"
+              >
+                Access
+              </a>
+            </div>
+          </div>
         </section>
         <hr className="w-full border-t border-gray-500"></hr>
 
@@ -288,8 +292,8 @@ I have experience with various technologies.<br></br><br></br>Next.js, TypeScrip
             get in touch
 
           </motion.h2>
-          <p> For E-mail: <b>Felipelima1114@gmail.com</b></p><br></br>         
-            Social media:<br></br>
+          <p> For E-mail: <b>Felipelima1114@gmail.com</b></p><br></br>
+          Social media:<br></br>
           <div className="flex m-5 mb-10">
             <a href="https://www.linkedin.com/in/felipe-de-lima-belisario/" className="text-blue-400 hover:underline">Linkedin
               <FaLinkedin size={24} className="text-blue-700" />
@@ -336,7 +340,7 @@ I have experience with various technologies.<br></br><br></br>Next.js, TypeScrip
             <button
               type="submit"
               className="w-full py-3 rounded-xl bg-white text-black font-bold hover:bg-gray-300 transition mb-20"
-            >         
+            >
               to send
             </button>
           </form>
