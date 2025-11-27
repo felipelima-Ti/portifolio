@@ -1,6 +1,6 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header&text=Bem-vindo+ao+meu+GitHub!&fontSize=40" />
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com?color=00bfff&size=25&center=true&vCenter=true&width=600&lines=Olá,+eu+sou+o+FelipeDesenvolvedor+Full+Stack!)
+![Typing SVG](https://readme-typing-svg.herokuapp.com?color=00bfff&size=25&center=true&vCenter=true&width=600&lines=Desenvolvedor+Full+Stack!)
 
 ## 📸 Sobre mim
 <img src="https://github.com/SEU-USER/SEU-REPO/blob/main/minha-foto.png" width="150" />
