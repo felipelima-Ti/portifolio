@@ -1,7 +1,7 @@
 "use client";
 
 import { FaReact, FaPython } from "react-icons/fa";
-import { SiJavascript, SiMysql, SiFirebase, SiTypescript, SiNextdotjs } from "react-icons/si";
+import { SiJavascript, SiMysql,SiTypescript, SiNextdotjs,SiFirebase } from "react-icons/si";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import Image from "next/image";
@@ -36,10 +36,10 @@ export default function Portfolio() {
     console.log(result);
 
     if (res.ok) {
-      alert("Mensagem enviada com sucesso!");
+      alert("Message sent successfully!");
       e.target.reset();
     } else {
-      alert("Erro ao enviar mensagem.");
+      alert("Error sending message.");
     }
   };
 
@@ -49,8 +49,8 @@ export default function Portfolio() {
     { name: "Tailwind", percent: 95 },
     { name: "JavaScript", percent: 98 },
     { name: "Python", percent: 65 },
-    { name: "MySQL", percent: 65 },
-    { name: "Firebase", percent: 78 },
+    { name: "MySQL", percent: 85 },
+    { name: "Firebase", percent: 60 },
   ];
 
   const fadeSlide = {
@@ -61,10 +61,10 @@ export default function Portfolio() {
   return (
     <div className="bg-black text-white min-h-screen">
       <header className="fixed top-0 left-0 w-full flex justify-end items-center bg-gray-700 h-15 z-50">
-        <Link className="m-5" href="#sobre">sobre</Link>
-        <Link className="m-5" href="#projects">projetos</Link>
-        <Link className="m-5" href="#senioridade">senioridade</Link>
-        <Link className="m-5" href="#contato">contato</Link>
+        <Link className="m-5" href="#sobre">about</Link>
+        <Link className="m-5" href="#projects">projects</Link>
+        <Link className="m-5" href="#senioridade">seniority</Link>
+        <Link className="m-5" href="#contato">contact</Link>
       </header>
       <main className="min-h-screen w-full bg-black text-white px-6 md:px-20 py-16 space-y-32 font-sans">
 
@@ -84,7 +84,7 @@ export default function Portfolio() {
             transition={{ delay: 0.2, duration: 0.7 }}
             className="text-gray-300 mt-4 text-lg"
           >
-            Desenvolvedor Full Stack focado em criar soluções modernas, rápidas e funcionais.
+            Full Stack Developer focused on creating modern, fast, and functional solutions.
           </motion.p>
         </section>
 
@@ -99,7 +99,7 @@ export default function Portfolio() {
               viewport={{ once: true }}
               className="text-3xl font-semibold mb-6 "
             >
-              Sobre Mim
+              About Me
             </motion.h2>
 
             <motion.p
@@ -109,15 +109,14 @@ export default function Portfolio() {
               viewport={{ once: true }}
               className="text-gray-300 leading-relaxed mb-6"
             >
-              Ola... eu sou o felipe Desenvolvedor apaixonado por tecnologia e soluções inteligentes.
-              Trabalho com foco em performance, responsividade e boa experiência do usuário.
-              <br></br>atualmente sou estudante de ciencias da computação na Estacio e busco sempre me atualizar com as
-              novas tecnologias do mercado para entregar o melhor resultado possível em cada projeto.
-              tenho experiência com diversas tecnologias<br></br><br></br>Next.js, TypeScript, Tailwind CSS, JavaScript, Python, MySQL e Firebase.<br></br>
+             Hi... I'm Felipe, a developer passionate about technology and smart solutions
+              I work focusing on performance, responsiveness, and a good user experience
+              <br></br>I am currently a computer science student at Estácio and I always seek to update myself with the latest technologies on the market to deliver the best possible result in each project
+I have experience with various technologies.<br></br><br></br>Next.js, TypeScript, Tailwind CSS, JavaScript, Python, MySQL e Firebase.<br></br>
 
             </motion.p>
             <Link href="#projects">
-              <button className=" mt-10 h-10 bg-gray-700 w-60 rounded-full">Veja meus projetos</button>
+              <button className=" mt-10 h-10 bg-gray-700 w-60 rounded-full">See my Projects</button>
             </Link>
           </div>
 
@@ -141,9 +140,9 @@ export default function Portfolio() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ staggerChildren: 0.15 }}
-          className=" ml-40 grid grid-cols-3 md:grid-cols-6 gap-6 "
+          className=" ml-30 grid grid-cols-6 md:grid-cols-6 gap-6 mr-2 "
         >
-          {[SiNextdotjs, SiJavascript, SiTypescript, FaPython, SiMysql, SiFirebase].map(
+          {[SiNextdotjs, SiJavascript, SiTypescript, FaPython, SiMysql, SiFirebase ].map(
             (Icon, i) => (
               <motion.div
                 key={i}
@@ -166,7 +165,7 @@ export default function Portfolio() {
             viewport={{ once: true }}
             className="text-3xl font-semibold mb-6"
           >
-            Senioridade por Tecnologia
+            Seniority by Technology
           </motion.h2>
 
           <motion.p
@@ -176,8 +175,7 @@ export default function Portfolio() {
             viewport={{ once: true }}
             className="text-gray-400 mb-6"
           >
-            Aqui está uma visão clara do meu nível de domínio em cada tecnologia — útil para
-            entender onde aplico mais experiência em projetos reais.
+            Here is a clear overview of my level of expertise in each technology — useful for understanding where I apply the most experience in real-world projects.
           </motion.p>
 
           <div className="space-y-4">
@@ -204,10 +202,11 @@ export default function Portfolio() {
 
                 <p className="text-xs text-gray-400 mt-2">
                   {t.percent >= 90
-                    ? " Nivel Senior: Pode confiar para liderar arquitetura e decisões críticas."
+                    ? " Senior Level: Can be trusted to lead architecture and critical decisions."
                     : t.percent >= 80
-                      ? " Nivel Pleno: Forte experiência; pronto para papéis sênior em squads."
-                      : "Nivel Pleno: Boa experiência para papéis técnicos e crescimento contínuo."}
+                      ? " Advanced Level: Capable of handling complex tasks independently."
+                      : " Mid-Level: Solid experience for technical roles and continuous growth."}
+                     
                 </p>
               </motion.div>
             ))}
@@ -216,62 +215,61 @@ export default function Portfolio() {
 
         {/* PROJETOS */}
         <section id="projects" className="py-10">
-          <h2 className="text-4xl font-bold mb-10 text-center">Projetos</h2>
+          <h2 className="text-4xl font-bold mb-10 text-center">Projects</h2>
          <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
   <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
     <img src="/port1.png" alt="Projeto 1" className="rounded-xl w-full h-70 object-cover mb-4" />
-    <h3 className="text-2xl font-semibold mb-2">Self checkout para restaurantes</h3>
+    <h3 className="text-2xl font-semibold mb-2">Self checkout for restaurants</h3>
     <p className="text-white/70 mb-4">
-      Um sistema completo de self checkout para pedidos,<br />
-      com o sistema integrado para delivery e retirada no local,<br />
-      cardápio dinâmico, carrinho de compras e checkout integrado.<br />
-      Ideal para delivery de pizza, lanches ou qualquer outro tipo de comida.<br /><br />
-      Tecnologias usadas: NextJS, TypeScript, Tailwind CSS, Prisma.
+      A complete self-checkout system for orders,<br />
+      with an integrated system for delivery and in-store pickup,<br />
+      dynamic menu, shopping cart, and integrated checkout.<br />
+      Ideal for delivering pizza, snacks, or any other type of food.<br /><br />  
+      Technologies used: NextJS, TypeScript, Tailwind CSS, Prisma.
     </p>
 
     <a
       href="https://restaurante-yw2v.vercel.app/"
       className=" w-40 mt-auto px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition"
     >
-      Acessar Projeto
+      Access
     </a>
   </div>
 
 
   <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col h-full">
     <img src="/port4.png" alt="Projeto 2" className="rounded-xl w-full h-70 object-cover mb-4" />
-    <h3 className="text-2xl font-semibold mb-2">Help desk para empresas</h3>
+    <h3 className="text-2xl font-semibold mb-2">Help desk for companies</h3>
     <p className="text-white/70 mb-4">
-      Um sistema de help Desk de chamados para grande empresas<br />
-      perfeito para controle de demandas,
-      resolução rápida de problemas,
-      fornecendo suporte técnico e atendimento ao cliente de forma eficaz e eficiente.<br /><br />
-      Tecnologias usadas: ReactJS, JavaScript, Tailwind CSS, Firebase.
+      A help desk ticketing system for large companies<br/>
+      perfect for demand control,
+      quick problem resolution,
+      providing technical support and customer service in an effective and efficient manner.<br /><br /><br></br>
+      Technologies used: ReactJS, JavaScript, Tailwind CSS, Firebase.
     </p>     
     <a
       href="https://project-chamados.netlify.app/"
       className="w-40 px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition"
     >
-      Acessar Projeto
+      Access
     </a>
   </div>
 
 
   <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col h-full">
     <img src="/port3.png" alt="Projeto 3" className="rounded-xl w-full h-70 object-cover mb-4" />
-    <h3 className="text-2xl font-semibold mb-2">Clinica estetica</h3>
+    <h3 className="text-2xl font-semibold mb-2">beauty clinic</h3>
     <p className="text-white/70 mb-4">
-      Um sistema de agendamento de atendimento de clientes clínica de estética com
-      agendamento, login, consulta de agendamentos e canal de suporte.
-      perfeito para clinicas de estetica com sistema de agendamento por whatsapp tambem<br></br><br></br>
-      Tecnologias usadas: NextJS, JavaScript, Tailwind CSS, Firebase.
+     A client appointment scheduling system for aesthetic clinics with scheduling, login, appointment consultation, and support channel.
+      Perfect for aesthetic clinics with a scheduling system via WhatsApp as well.<br></br><br></br>
+      Technologies used: NextJS, JavaScript, Tailwind CSS, Firebase.
     </p>
 
     <a
       href="https://clinica-estetica-seven.vercel.app/"
       className=" w-40 mt-auto px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition"
     >
-      Acessar Projeto
+      Access
     </a>
   </div>
 </div>
@@ -287,11 +285,11 @@ export default function Portfolio() {
             viewport={{ once: true }}
             className="text-3xl font-semibold mb-10"
           >
-            Entre em Contato
+            get in touch
 
           </motion.h2>
-          <p> Pelo Email: <b>Felipelima1114@gmail.com</b></p><br></br>
-          Redes sociais:<br></br>
+          <p> For E-mail: <b>Felipelima1114@gmail.com</b></p><br></br>         
+            Social media:<br></br>
           <div className="flex m-5 mb-10">
             <a href="https://www.linkedin.com/in/felipe-de-lima-belisario/" className="text-blue-400 hover:underline">Linkedin
               <FaLinkedin size={24} className="text-blue-700" />
@@ -306,12 +304,12 @@ export default function Portfolio() {
               <FaWhatsapp size={24} className="text-green-600" />
             </a>
           </div>
-          <p className="mb-20">Envia-me uma mensagem preenchendo o formulario abaixo com sua informaçoes
+          <p className="mb-20">Send me a message by filling out the form below with your information
           </p>
           <form onSubmit={handleSubmit} className="space-y-6">
             <input
               name="name"
-              placeholder="Seu nome"
+              placeholder="Your Name"
               onChange={handleChange}
               className="w-full p-3 rounded-xl bg-white/5 border border-white/10"
               required
@@ -320,7 +318,7 @@ export default function Portfolio() {
             <input
               type="email"
               name="email"
-              placeholder="Seu email"
+              placeholder="Your E-mail"
               onChange={handleChange}
               className="w-full p-3 rounded-xl bg-white/5 border border-white/10"
               required
@@ -328,7 +326,7 @@ export default function Portfolio() {
 
             <textarea
               name="message"
-              placeholder="Sua mensagem"
+              placeholder="Your Message"
               rows="4"
               onChange={handleChange}
               className="w-full p-3 rounded-xl bg-white/5 border border-white/10"
@@ -338,8 +336,8 @@ export default function Portfolio() {
             <button
               type="submit"
               className="w-full py-3 rounded-xl bg-white text-black font-bold hover:bg-gray-300 transition mb-20"
-            >
-              Enviar
+            >         
+              to send
             </button>
           </form>
         </section>
