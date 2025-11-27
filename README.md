@@ -1,40 +1,32 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header&text=Bem-vindo+ao+meu+GitHub!&fontSize=40" />
 
-## Getting Started
+![Typing SVG](https://readme-typing-svg.herokuapp.com?color=00bfff&size=25&center=true&vCenter=true&width=600&lines=Olá,+eu+sou+o+Felipe;Desenvolvedor+Full+Stack;Seja+bem-vindo!)
 
-First, run the development server:
+## 📸 Sobre mim
+<img src="https://github.com/SEU-USER/SEU-REPO/blob/main/minha-foto.png" width="150" />
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<p style="color:#00bfff;">Desenvolvedor apaixonado por tecnologia e criação.</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🌐 Redes sociais
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<a href="https://linkedin.com/in/seuuser">
+  <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge">
+</a>
 
-## Learn More
+<a href="https://instagram.com/seuuser">
+  <img src="https://img.shields.io/badge/-Instagram-E1306C?logo=instagram&logoColor=white&style=for-the-badge">
+</a>
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✉️ Contato rápido
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<a href="mailto:seuemail@gmail.com?subject=Contato%20via%20GitHub&body=Olá!+Estou+vindo+do+seu+GitHub,+podemos+conversar?">
+  <img src="https://img.shields.io/badge/Enviar%20Mensagem-FF5722?style=for-the-badge" />
+</a>
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# portifolio
->>>>>>> 5cd0a39d9c638f131da1986e1ab8188fc3c4d863
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer" />
