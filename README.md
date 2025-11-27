@@ -9,21 +9,21 @@
 
 ---
 
-## 🌐 Redes sociais
+## Redes sociais
 
-<a href="https://linkedin.com/in/seuuser">
+<a href="https://www.linkedin.com/in/felipe-de-lima-belisario/">
   <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge">
 </a>
 
-<a href="https://instagram.com/seuuser">
+<a href="https://www.instagram.com/felipelimahbl/">
   <img src="https://img.shields.io/badge/-Instagram-E1306C?logo=instagram&logoColor=white&style=for-the-badge">
 </a>
 
 ---
 
-## ✉️ Contato rápido
+## Contato rápido
 
-<a href="mailto:seuemail@gmail.com?subject=Contato%20via%20GitHub&body=Olá!+Estou+vindo+do+seu+GitHub,+podemos+conversar?">
+<a href="mailto:felipelima1114@gmail.com?subject=Contato%20via%20GitHub&body=Olá!+Estou+vindo+do+seu+GitHub,+podemos+conversar?">
   <img src="https://img.shields.io/badge/Enviar%20Mensagem-FF5722?style=for-the-badge" />
 </a>
 
