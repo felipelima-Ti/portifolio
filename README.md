@@ -5,7 +5,7 @@
 ## Sobre mim
 <img src="https://avatars.githubusercontent.com/u/153960662?v=4" width="150" />
 
-<p style="color:#00bfff;">desenvolvedor front-end foco no design e na criaçao de web sites<br><br>Ciencias da Computaçao👨‍💻 2/8.</p>
+<p style="color:#00bfff;">desenvolvedor full-stack foco no design e na criaçao de web sites<br><br>Ciencias da Computaçao👨‍💻 2/8.</p>
 
 ---
 
