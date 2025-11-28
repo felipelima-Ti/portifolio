@@ -280,6 +280,7 @@ export default function Portfolio() {
         </section>
         <hr className="w-full border-t border-gray-500"></hr>
 
+        
         {/* CONTATO */}
         <section id="contato" className="max-w-2xl mx-auto">
           <motion.h2
