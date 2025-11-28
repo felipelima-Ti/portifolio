@@ -262,7 +262,7 @@ export default function Portfolio() {
 
             <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col h-full">
               <img src="/port3.png" alt="Projeto 3" className="rounded-xl w-full h-70 object-cover mb-4" />
-              <h3 className="text-2xl font-semibold mb-2">beauty clinic</h3>
+              <h3 className="text-2xl font-semibold mb-2">scheduling for an aesthetic clinic</h3>
               <p className="text-white/70 mb-4">
                 A client appointment scheduling system for aesthetic clinics with scheduling, login, appointment consultation, and support channel.
                 Perfect for aesthetic clinics with a scheduling system via WhatsApp as well.<br></br><br></br>
