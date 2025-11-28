@@ -18,7 +18,6 @@ export async function POST(req) {
       name: name,
       email: email,
       message: message,
-      // <— evita erro INVALID_ARGUMENT
     });
 
     return NextResponse.json(
