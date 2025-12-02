@@ -69,20 +69,25 @@ export default function Portfolio() {
 
   return (
     <div className="bg-black text-white min-h-screen">
-      <header className="fixed top-0 left-0 w-full flex justify-end items-center bg-gray-700 h-15 z-50">
-        <Link className="m-5" href="#sobre">about</Link>
-        <Link className="m-5" href="#projects">projects</Link>
-        <Link className="m-5" href="#senioridade">seniority</Link>
-        <Link className="m-5" href="#contato">contact</Link>
+       <header className="fixed top-0 left-0 w-full bg-black text-white h-20 z-50 flex items-center justify-between px-6">
+        <h1 className="text-xl ml-5"><b className="">Felipelima</b><b className=" font-semibold text-blue-400">Dev</b></h1>
+        <nav className="flex gap-5">
+          <Link className="text-white" href="#sobre">About me</Link>
+          <Link className="text-white" href="#projects">Projects</Link>
+          <Link className="text-white" href="#contato">Contact</Link>
+          
+        </nav>
       </header>
+
       <main className="min-h-screen w-full bg-black text-white px-6 md:px-20 py-16 space-y-32 font-sans">
 
         {/* INTRODUÇÃO */}
         <section className="text-center">
           <motion.h1
-            initial={{ opacity: 21, y: -20 }}
-            animate={{ opacity: 2, y: 0 }}
-            transition={{ duration: 0.2 }}
+           variants={fadeSlide}
+           initial="hidden"
+           whileInView="show"
+            viewport={{ once: true }}
             className="text-4xl md:text-6xl font-bold mt-20"
           >
             Felipe lima dev
@@ -120,11 +125,31 @@ export default function Portfolio() {
               I work focusing on performance, responsiveness, and a good user experience
               <br></br>I am currently a computer science student at Estácio and I always seek to update myself with the latest technologies on the market to deliver the best possible result in each project
               I have experience with various technologies.<br></br><br></br>Next.js, TypeScript, Tailwind CSS, JavaScript, Python, MySQL e Firebase.<br></br>
-
             </motion.p>
+              <motion.div variants={fadeSlide} initial="hidden"whileInView="show" viewport={{once:true}} className="flex m-5 mb-10">
+              <a href="https://www.linkedin.com/in/felipe-de-lima-belisario/" className="text-white hover:underline">
+              <FaLinkedin size={24} className="text-gray-600 hover:text-white" />
+            </a><br></br>
+            <a href="https://github.com/felipelima-Ti" className="pl-5 hover:underline">
+              <FaGithub size={24} className="text-gray-600 hover:underline hover:text-white" />
+            </a><br></br>
+            <a href="https://www.instagram.com/felipelimahbl" className="text-pink-400 hover:underline pl-5">
+              <FaInstagram size={24} className="text-gray-600 hover:text-white" />
+            </a><br></br>
+            <a href="https://wa.me/5532988934044" className="text-green-400 hover:underline pl-5">
+              <FaWhatsapp size={24} className="text-gray-600 hover:text-white" />
+            </a>
+            </motion.div>
+            <motion.div
+              variants={fadeSlide}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+            >
             <Link href="#projects">
               <button className=" mt-10 h-10 bg-gray-700 w-60 rounded-full">See my Projects</button>
             </Link>
+            </motion.div>
           </div>
 
           <motion.div
@@ -282,36 +307,47 @@ export default function Portfolio() {
 
         
         {/* CONTATO */}
-        <section id="contato" className="max-w-2xl mx-auto">
+        <section id="contato" className="max-w-5xl mx-auto">
+          <p className="text-center text-3xl font-bold mb-20">Get in Touch</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-start">
           <motion.h2
             variants={fadeSlide}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="text-3xl font-semibold mb-10"
+            className="text-3xl  mb-10"
           >
-            Get in Touch
+              <p className="text-xl">Contact for my</p>
+               <p className="text-sm mt-10">Email: Felipelima1114@gmail.com</p>
+                <p className="text-sm">Telephone: +32988934044</p>
+                <br></br>
+                <p className="text-xl">Redes sociais</p>
 
-          </motion.h2>
-          <p> For E-mail: <b>Felipelima1114@gmail.com</b></p><br></br>
-          Social media:<br></br>
-          <div className="flex m-5 mb-10">
-            <a href="https://www.linkedin.com/in/felipe-de-lima-belisario/" className="text-blue-400 hover:underline">Linkedin
+         
+           <div className="flex mt-2 mb-10 flex ">
+            <a href="https://www.linkedin.com/in/felipe-de-lima-belisario/" className="text-blue-400 hover:underline flex flex-col items-start text-sm">Linkedin
               <FaLinkedin size={24} className="text-blue-700" />
-            </a><br></br>
-            <a href="https://github.com/felipelima-Ti" className="pl-5 hover:underline">Github
+            </a>
+            <a href="https://github.com/felipelima-Ti" className="pl-5 hover:underline text-sm">Github
               <FaGithub size={24} className="text-white hover:underline" />
-            </a><br></br>
-            <a href="https://www.instagram.com/felipelimahbl" className="text-pink-400 hover:underline pl-5">Instagram
+            </a>
+            <a href="https://www.instagram.com/felipelimahbl" className="text-pink-400 hover:underline pl-5 text-sm">Instagram
               <FaInstagram size={24} className="text-pink-600" />
-            </a><br></br>
-            <a href="https://wa.me/5532988934044" className="text-green-400 hover:underline pl-5">WhatsApp
+            </a>
+            <a href="https://wa.me/5532988934044" className="text-green-400 hover:underline pl-5 text-sm">WhatsApp
               <FaWhatsapp size={24} className="text-green-600" />
             </a>
-          </div>
-          <p className="mb-20">Send me a message by filling out the form below with your information
-          </p>
-          <form onSubmit={handleSubmit} className="space-y-6">
+            </div>
+          </motion.h2>
+          <motion.div
+           variants={fadeSlide}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          className="">
+            <p className="ml-5">Give-me a message i'm response you in 24 hours</p>
+            <br></br>
+          <form onSubmit={handleSubmit} className=" space-y-6">
             <input
               name="name"
               placeholder="Your Name"
@@ -345,6 +381,8 @@ export default function Portfolio() {
               To Send
             </button>
           </form>
+          </motion.div>
+          </div>
         </section>
       </main>
     </div>
