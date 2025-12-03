@@ -8,6 +8,7 @@ import Image from "next/image";
 import { useReveal } from "@/app/hooks/useReveal";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import Typewriter from "./hooks/typewriter";
 
 export default function Portfolio() {
   function AnimatedBar({ percent }) {
@@ -21,6 +22,7 @@ export default function Portfolio() {
       />
     );
   }
+  
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const revealRef = useReveal();
   const handleChange = (e) => {
@@ -70,9 +72,9 @@ export default function Portfolio() {
   return (
     <div className="bg-black text-white min-h-screen">
        <header className="fixed top-0 left-0 w-full bg-black text-white h-20 z-50 flex items-center justify-between px-6">
-        <h1 className="text-xl ml-5"><b className="">Felipelima</b><b className=" font-semibold text-blue-400">Dev</b></h1>
-        <nav className="flex gap-5">
-          <Link className="text-white" href="#sobre">About me</Link>
+        <Image src="/back.png" alt="Logo" width={120} height={100} className=""/>
+        <nav className="flex gap-2">
+          <Link className="text-white w-18 ml-2" href="#sobre">About me</Link>
           <Link className="text-white" href="#projects">Projects</Link>
           <Link className="text-white" href="#contato">Contact</Link>
           
@@ -92,18 +94,20 @@ export default function Portfolio() {
           >
             Felipe lima dev
           </motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2, duration: 0.7 }}
-            className="text-gray-300 mt-4 text-lg"
-          >
-            Full Stack Developer focused on creating modern, fast, and functional solutions.
-          </motion.p>
+  
+         
+           <Typewriter 
+        text="Full Stack Developer focused on creating modern, fast, and functional solutions."
+        speed={20} // opcional
+        className="flex flex-col mt-5"
+      />
         </section>
-
+        <section id="sobre" className="items-center">
+          <motion.hr className="mb-40 border-gray-500" variants={fadeSlide} initial="hidden"whileInView="show"viewport={{once:true}}></motion.hr>
+          <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-30">
+        
         {/* SOBRE MIM */}
-        <section id="sobre" className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-30">
+        
           <div className="flex-1">
             <motion.h2
               variants={fadeSlide}
@@ -121,23 +125,23 @@ export default function Portfolio() {
               whileInView="show"
               viewport={{ once: true }}
               className="text-gray-300 leading-relaxed mb-6">
-              Hi... I'm Felipe, a developer passionate about technology and smart solutions
+              Hi... I'm Felipe, <b className="text-blue-400">Full Stack Developer</b> passionate about technology and smart solutions
               I work focusing on performance, responsiveness, and a good user experience
               <br></br>I am currently a computer science student at Estácio and I always seek to update myself with the latest technologies on the market to deliver the best possible result in each project
               I have experience with various technologies.<br></br><br></br>Next.js, TypeScript, Tailwind CSS, JavaScript, Python, MySQL e Firebase.<br></br>
             </motion.p>
               <motion.div variants={fadeSlide} initial="hidden"whileInView="show" viewport={{once:true}} className="flex m-5 mb-10">
               <a href="https://www.linkedin.com/in/felipe-de-lima-belisario/" className="text-white hover:underline">
-              <FaLinkedin size={24} className="text-gray-600 hover:text-white" />
+              <FaLinkedin size={28} className="text-gray-600 hover:text-white" />
             </a><br></br>
             <a href="https://github.com/felipelima-Ti" className="pl-5 hover:underline">
-              <FaGithub size={24} className="text-gray-600 hover:underline hover:text-white" />
+              <FaGithub size={28} className="text-gray-600 hover:underline hover:text-white" />
             </a><br></br>
             <a href="https://www.instagram.com/felipelimahbl" className="text-pink-400 hover:underline pl-5">
-              <FaInstagram size={24} className="text-gray-600 hover:text-white" />
+              <FaInstagram size={28} className="text-gray-600 hover:text-white" />
             </a><br></br>
             <a href="https://wa.me/5532988934044" className="text-green-400 hover:underline pl-5">
-              <FaWhatsapp size={24} className="text-gray-600 hover:text-white" />
+              <FaWhatsapp size={28} className="text-gray-600 hover:text-white" />
             </a>
             </motion.div>
             <motion.div
@@ -167,6 +171,7 @@ export default function Portfolio() {
               className=" p-2 rounded-full shadow-lg border border-gray-600 translate-y-2 transtion-all duration-1000"
             />
           </motion.div>
+          </div>
         </section>
         <motion.div
           initial={{ opacity: 0 }}
@@ -187,9 +192,10 @@ export default function Portfolio() {
             )
           )}
         </motion.div>
-        <hr className="w-full border-t border-gray-500" />
         {/* SENIORIDADE */}
-        <section id="senioridade" className="max-w-4xl mx-auto">
+        <section id="senioridade" className="">
+          <hr className=" mb-40 w-full border-t border-gray-500" />
+          <div className="max-w-7xl mx-auto">
           <motion.h2
             variants={fadeSlide}
             initial="hidden"
@@ -240,10 +246,12 @@ export default function Portfolio() {
               </motion.div>
             ))}
           </div>
+          </div>
         </section>
 
         {/* PROJETOS */}
         <section id="projects" className="py-10">
+          <hr className="mb-40 border-gray-500"></hr>
           <h2 className="text-4xl font-bold mb-10 text-center">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
             <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
@@ -265,7 +273,6 @@ export default function Portfolio() {
               </a>
             </div>
 
-
             <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col h-full">
               <img src="/port4.png" alt="Projeto 2" className="rounded-xl w-full h-70 object-cover mb-4" />
               <h3 className="text-2xl font-semibold mb-2">Help desk for companies</h3>
@@ -283,7 +290,6 @@ export default function Portfolio() {
                 Access
               </a>
             </div>
-
 
             <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col h-full">
               <img src="/port3.png" alt="Projeto 3" className="rounded-xl w-full h-70 object-cover mb-4" />
@@ -304,11 +310,10 @@ export default function Portfolio() {
           </div>
         </section>
         <hr className="w-full border-t border-gray-500"></hr>
-
         
         {/* CONTATO */}
-        <section id="contato" className="max-w-5xl mx-auto">
-          <p className="text-center text-3xl font-bold mb-20">Get in Touch</p>
+        <section id="contato" className="max-w-6xl mx-auto">
+          <p className="text-center text-3xl font-bold mb-20">Send me a message</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-start">
           <motion.h2
             variants={fadeSlide}
@@ -317,13 +322,12 @@ export default function Portfolio() {
             viewport={{ once: true }}
             className="text-3xl  mb-10"
           >
-              <p className="text-xl">Contact for my</p>
-               <p className="text-sm mt-10">Email: Felipelima1114@gmail.com</p>
-                <p className="text-sm">Telephone: +32988934044</p>
+              <p className="text-xl mt-5">Contact me for</p>
+               <p className="text-sm mt-10 text-gray-500">Email: Felipelima1114@gmail.com</p>
+                <p className="text-sm text-gray-500">Telephone: +32988934044</p>
                 <br></br>
                 <p className="text-xl">Redes sociais</p>
-
-         
+      
            <div className="flex mt-2 mb-10 flex ">
             <a href="https://www.linkedin.com/in/felipe-de-lima-belisario/" className="text-blue-400 hover:underline flex flex-col items-start text-sm">Linkedin
               <FaLinkedin size={24} className="text-blue-700" />
@@ -345,7 +349,7 @@ export default function Portfolio() {
             whileInView="show"
             viewport={{ once: true }}
           className="">
-            <p className="ml-5">Give-me a message i'm response you in 24 hours</p>
+            <p className="ml-5">Send me a message and I will reply within 24 hours</p>
             <br></br>
           <form onSubmit={handleSubmit} className=" space-y-6">
             <input
@@ -382,7 +386,9 @@ export default function Portfolio() {
             </button>
           </form>
           </motion.div>
+          <div className="mb-10"></div>
           </div>
+         
         </section>
       </main>
     </div>
