@@ -330,7 +330,7 @@ export default function Portfolio() {
               Give me a message in my channel contacts for more details and other projects! 
             <Link href="#contato">
             <br></br>
-              <button className="ml-2 mt-10 h-10 bg-gray-700 w-60 rounded-full">Contact me</button>
+              <button className="ml-2 mt-10 h-10 bg-gray-700 w-60 rounded-full mb-30">Contact me</button>
             </Link>
             </motion.div>
         </section>
