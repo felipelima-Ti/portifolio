@@ -72,7 +72,7 @@ export default function Portfolio() {
   return (
     <div className="bg-black text-white min-h-screen">
        <header className="fixed top-0 left-0 w-full bg-black text-white h-20 z-50 flex items-center justify-between px-6">
-        <Image src="/back.png" alt="Logo" width={120} height={100} className=""/>
+        <Image src="/back.png" alt="Logo" width={130} height={10} className=""/>
         <nav className="flex gap-2">
           <Link className="text-white w-18 ml-2" href="#sobre">About me</Link>
           <Link className="text-white" href="#projects">Projects</Link>
@@ -90,17 +90,29 @@ export default function Portfolio() {
            initial="hidden"
            whileInView="show"
             viewport={{ once: true }}
-            className="text-4xl md:text-6xl font-bold mt-20"
+            className="text-4xl md:text-6xl font-bold mt-80  drop-shadow-[0_0_10px_#3b82f6] drop-shadow-[0_0_20px_#3b82f6]"
           >
-            Felipe lima dev
+           FelipeLima Dev
           </motion.h1>
   
          
            <Typewriter 
         text="Full Stack Developer focused on creating modern, fast, and functional solutions."
         speed={20} // opcional
-        className="flex flex-col mt-5"
+        className="flex flex-col mt-5 "
       />
+        <div className="mb-90">
+        <motion.div className="text-center justify-center"
+          variants={fadeSlide}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
+        <Link className="" href="#sobre">
+        <button className=" mt-10 h-10 bg-gray-700 w-60 rounded-full hover:bg-gray-600 ">Know more about me</button>
+        </Link>
+        </motion.div>
+        </div>
         </section>
         <section id="sobre" className="items-center">
           <motion.hr className="mb-40 border-gray-500" variants={fadeSlide} initial="hidden"whileInView="show"viewport={{once:true}}></motion.hr>
@@ -308,6 +320,19 @@ export default function Portfolio() {
               </a>
             </div>
           </div>
+          <motion.div
+              variants={fadeSlide}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+              className="text-center justify-center mt-10"
+            >
+              Give me a message in my channel contacts for more details and other projects! 
+            <Link href="#contato">
+            <br></br>
+              <button className="ml-2 mt-10 h-10 bg-gray-700 w-60 rounded-full">Contact me</button>
+            </Link>
+            </motion.div>
         </section>
         <hr className="w-full border-t border-gray-500"></hr>
         
