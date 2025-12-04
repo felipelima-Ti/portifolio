@@ -84,7 +84,7 @@ export default function Portfolio() {
       <main className="min-h-screen w-full bg-black text-white px-6 md:px-20 py-16 space-y-32 font-sans">
 
         {/* INTRODUÇÃO */}
-        <section className="text-center">
+        <section className="text-center justify-center">
           <motion.h1
            variants={fadeSlide}
            initial="hidden"
@@ -101,7 +101,7 @@ export default function Portfolio() {
         speed={20} // opcional
         className="flex flex-col mt-5 "
       />
-        <div className="mb-90">
+        <div className="mb-80">
         <motion.div className="text-center justify-center"
           variants={fadeSlide}
           initial="hidden"
