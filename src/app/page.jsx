@@ -101,7 +101,7 @@ export default function Portfolio() {
         speed={20} // opcional
         className="flex flex-col mt-5 "
       />
-        <div className="mb-80">
+        <div className="mb-90">
         <motion.div className="text-center justify-center"
           variants={fadeSlide}
           initial="hidden"
