@@ -28,6 +28,8 @@ export default function Portfolio() {
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
+   const [activeTab, setActiveTab] = useState("projects"); 
+  // options: "projects", "certifications", "more"
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -98,7 +100,7 @@ export default function Portfolio() {
          
            <Typewriter 
         text="Full Stack Developer focused on creating modern, fast, and functional solutions."
-        speed={20} // opcional
+        speed={20}
         className="flex flex-col mt-5 "
       />
         <div className="mb-90">
@@ -265,60 +267,146 @@ export default function Portfolio() {
         <section id="projects" className="py-10">
           <hr className="mb-40 border-gray-500"></hr>
           <h2 className="text-4xl font-bold mb-10 text-center">Projects</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-            <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
-              <img src="/port1.png" alt="Projeto 1" className="rounded-xl w-full h-70 object-cover mb-4" />
-              <h3 className="text-2xl font-semibold mb-2">Self checkout for restaurants</h3>
-              <p className="text-white/70 mb-4">
-                A complete self-checkout system for orders,<br />
-                with an integrated system for delivery and in-store pickup,<br />
-                dynamic menu, shopping cart, and integrated checkout.<br />
-                Ideal for delivering pizza, snacks, or any other type of food.<br /><br />
-                Technologies used: NextJS, TypeScript, Tailwind CSS, Prisma.
-              </p>
+          <div className="border border-white/50 p-0 text-center justify-center rounded-2xl max-w-7xl mx-auto ">
+         <div className="flex flex-wrap items-center justify-center gap-4 p-6">
+    <button
+      onClick={() => setActiveTab("projects")}
+      className={`mt-5 h-10 border border-white/30 px-6 rounded-full 
+      ${activeTab === "projects" ? "bg-white/20" : ""}`}
+    >
+      See my Projects
+    </button>
 
-              <a
-                href="https://restaurante-yw2v.vercel.app/"
-                className=" w-40 mt-auto px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition"
-              >
-                Access
-              </a>
-            </div>
+    <button
+      onClick={() => setActiveTab("certifications")}
+      className={`mt-5 h-10 border border-white/30 px-6 rounded-full
+      ${activeTab === "certifications" ? "bg-white/20" : ""}`}
+    >
+      See my Certifications
+    </button>
+    <button
+      onClick={() => setActiveTab("more")}
+      className={`mt-5 h-10 border border-white/30 px-6 rounded-full 
+      ${activeTab === "more" ? "bg-white/20" : ""}`}
+    >
+      See More projects
+    </button>
+  </div>
 
-            <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col h-full">
-              <img src="/port4.png" alt="Projeto 2" className="rounded-xl w-full h-70 object-cover mb-4" />
-              <h3 className="text-2xl font-semibold mb-2">Help desk for companies</h3>
-              <p className="text-white/70 mb-4">
-                A help desk ticketing system for large companies<br />
-                perfect for demand control,
-                quick problem resolution,
-                providing technical support and customer service in an effective and efficient manner.<br /><br /><br></br>
-                Technologies used: ReactJS, JavaScript, Tailwind CSS, Firebase.
-              </p>
-              <a
-                href="https://project-chamados.netlify.app/"
-                className="w-40 px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition"
-              >
-                Access
-              </a>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+  {activeTab === "projects" && (
+    <>
+      {/* SEUS 3 PROJETOS ATUAIS */}
+      <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
+        <img src="/port1.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-2xl font-semibold mb-2">Self checkout for restaurants</h3>
+        <p className="text-white/70 mb-4">
+         A complete self-checkout system for orders,<br /> 
+         with an integrated system for delivery and in-store pickup, dynamic menu, shopping cart, 
+         and integrated checkout. Ideal for delivering pizza, snacks, or any other type of food.<br /><br /> 
+         Technologies used: NextJS, TypeScript, Tailwind CSS, Prisma.
+        </p>
+        <a href="https://restaurante-yw2v.vercel.app/" className="w-40 mt-auto px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition">
+          Access
+        </a>
+      </div>
 
-            <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col h-full">
-              <img src="/port3.png" alt="Projeto 3" className="rounded-xl w-full h-70 object-cover mb-4" />
-              <h3 className="text-2xl font-semibold mb-2">scheduling for an aesthetic clinic</h3>
-              <p className="text-white/70 mb-4">
-                A client appointment scheduling system for aesthetic clinics with scheduling, login, appointment consultation, and support channel.
-                Perfect for aesthetic clinics with a scheduling system via WhatsApp as well.<br></br><br></br>
-                Technologies used: NextJS, JavaScript, Tailwind CSS, Firebase.
-              </p>
+      <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
+        <img src="/port4.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-2xl font-semibold mb-2">Help desk for companies</h3>
+        <p className="text-white/70 mb-4">
+        A help desk ticketing system for large companies perfect for demand control, 
+        quick problem resolution, providing technical support and customer service in an effective 
+        and efficient manner.<br /> <br />
+        Technologies used: ReactJS, JavaScript, Tailwind CSS, Firebase. <br></br><br></br>
+        </p>
+        <a href="https://project-chamados.netlify.app/" className="w-40 mt-auto px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition">
+          Access
+        </a>
+      </div>
 
-              <a
-                href="https://clinica-estetica-seven.vercel.app/"
-                className=" w-40 mt-auto px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition"
-              >
-                Access
-              </a>
-            </div>
+      <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
+        <img src="/port3.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-2xl font-semibold mb-2">Scheduling for aesthetic clinic</h3>
+        <p className="text-white/70 mb-4">
+         A client appointment scheduling system for aesthetic clinics 
+         with scheduling, login, appointment consultation, and support channel. 
+         Perfect for aesthetic clinics with a scheduling system via WhatsApp as well.<br></br><br></br> 
+         Technologies used: NextJS, JavaScript, Tailwind CSS, Firebase.
+        </p>
+        <a href="https://clinica-estetica-seven.vercel.app/" className="w-40 mt-auto px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition">
+          Access
+        </a>
+      </div>
+    </>
+  )}
+
+  {/* CERTIFICATIONS */}
+  {activeTab === "certifications" && (
+    <>
+      <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
+      <img src="/certificado.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-xl font-semibold mb-3">introduction a computer science CC50</h3>
+        <p className="text-white/60 mb-4">Issued by Harvard</p>
+        <a href="https://www.linkedin.com/in/felipelimati/details/certifications/1763579911939/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
+      </div>
+
+      <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
+       <img src="/javaav.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-xl font-semibold mb-3">Curse Java advanced in Bradesco school</h3>
+        <p className="text-white/60 mb-4">Issued by TechSchool</p>
+        <a href="https://www.linkedin.com/in/felipelimati/details/certifications/317966805/multiple-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ&treasuryMediaId=1635551282858" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
+      </div>
+       <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
+       <img src="/javab.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-xl font-semibold mb-3">Curse Java Basic in Bradesco school</h3>
+        <p className="text-white/60 mb-4">Issued by fundation Bradesco</p>
+        <a href="https://www.linkedin.com/in/felipelimati/details/certifications/317966805/multiple-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ&treasuryMediaId=1635551282857" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
+      </div>
+        <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
+       <img src="/android.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-xl font-semibold mb-3">Curse aplications mobile with Android studio</h3>
+        <p className="text-white/60 mb-4">Issued by fundation Bradesco</p>
+        <a href="https://www.linkedin.com/in/felipelimati/details/certifications/317966805/multiple-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ&treasuryMediaId=1635551486649" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
+      </div>
+        <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
+       <img src="/cyber.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-xl font-semibold mb-3">Curse information technology security </h3>
+        <p className="text-white/60 mb-4">Issued by fundation Bradesco</p>
+        <a href="https://www.linkedin.com/in/felipelimati/details/certifications/317966805/multiple-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ&treasuryMediaId=1635551284736" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
+      </div>
+        <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
+       <img src="/senac.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-xl font-semibold mb-3"> full course bulletin computer technician</h3>
+        <p className="text-white/60 mb-4">Issued by Senac</p>
+        <a href="https://www.linkedin.com/in/felipelimati/details/certifications/1635551282813/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
+      </div>
+    </>
+  )}
+
+  {/* MORE PROJECTS */}
+  {activeTab === "more" && (
+    <>
+      <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
+        <h3 className="text-xl font-semibold mb-3">Finance Dashboard</h3>
+        <p className="text-white/60 mb-4">Real-time financial dashboard.</p>
+        <a href="#" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">Access</a>
+      </div>
+
+      <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
+        <h3 className="text-xl font-semibold mb-3">AI Article Generator</h3>
+        <p className="text-white/60 mb-4">Generate SEO-ready content using AI.</p>
+        <a href="#" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">Access</a>
+      </div>
+
+      <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
+        <h3 className="text-xl font-semibold mb-3">Task Manager</h3>
+        <p className="text-white/60 mb-4">Kanban task management system.</p>
+        <a href="#" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">Access</a>
+      </div>
+    </>
+  )}
+</div>
           </div>
           <motion.div
               variants={fadeSlide}
