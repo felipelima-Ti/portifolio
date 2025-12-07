@@ -91,7 +91,7 @@ export default function Portfolio() {
            variants={fadeSlide}
            initial="hidden"
            whileInView="show"
-            viewport={{ once: true }}
+            viewport={{ amount: 0.2 }}
             className="text-4xl md:text-6xl font-bold mt-80  drop-shadow-[0_0_10px_#3b82f6] drop-shadow-[0_0_20px_#3b82f6]"
           >
            FelipeLima Dev
@@ -108,7 +108,7 @@ export default function Portfolio() {
           variants={fadeSlide}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true }}
+          viewport={{ amount: 0.2}}
         >
         <Link className="" href="#sobre">
         <button className=" mt-10 h-10 bg-gray-700 w-60 rounded-full hover:bg-gray-600 ">Know more about me</button>
@@ -127,7 +127,7 @@ export default function Portfolio() {
               variants={fadeSlide}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true }}
+              viewport={{ amount: 0.2 }}
               className="text-3xl font-semibold mb-6 "
             >
               About Me
@@ -137,7 +137,7 @@ export default function Portfolio() {
               variants={fadeSlide}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true }}
+              viewport={{ amount: 0.2 }}
               className="text-gray-300 leading-relaxed mb-6">
               Hi... I'm Felipe, <b className="text-blue-400">Full Stack Developer</b> passionate about technology and smart solutions
               I work focusing on performance, responsiveness, and a good user experience
