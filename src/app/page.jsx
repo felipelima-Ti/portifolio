@@ -293,7 +293,7 @@ export default function Portfolio() {
     </button>
   </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-2">
   {activeTab === "projects" && (
     <>
       {/* SEUS 3 PROJETOS ATUAIS */}
