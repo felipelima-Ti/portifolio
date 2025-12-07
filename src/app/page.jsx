@@ -264,6 +264,12 @@ export default function Portfolio() {
         </section>
 
         {/* PROJETOS */}
+        <motion.div
+         variants={fadeSlide}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+        >
         <section id="projects" className="py-10">
           <hr className="mb-40 border-gray-500"></hr>
           <h2 className="text-4xl font-bold mb-10 text-center">Projects</h2>
@@ -292,11 +298,16 @@ export default function Portfolio() {
       See More projects
     </button>
   </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-2">
+        
+          <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-2"
+           variants={fadeSlide}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+          >
   {activeTab === "projects" && (
     <>
-      {/* SEUS 3 PROJETOS ATUAIS */}
+      {/*PROJETOS ATUAIS */}
       <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
         <img src="/port1.png" className="rounded-xl w-full h-70 object-cover mb-4" />
         <h3 className="text-2xl font-semibold mb-2">Self checkout for restaurants</h3>
@@ -406,7 +417,7 @@ export default function Portfolio() {
       </div>
     </>
   )}
-</div>
+</motion.div>
           </div>
           <motion.div
               variants={fadeSlide}
@@ -422,6 +433,7 @@ export default function Portfolio() {
             </Link>
             </motion.div>
         </section>
+        </motion.div>
         <hr className="w-full border-t border-gray-500"></hr>
         
         {/* CONTATO */}
