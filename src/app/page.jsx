@@ -363,34 +363,37 @@ export default function Portfolio() {
       </div>
 
       <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
-       <img src="/javaav.png" className="rounded-xl w-full h-70 object-cover mb-4" />
-        <h3 className="text-xl font-semibold mb-3">Curse Java advanced in Bradesco school</h3>
-        <p className="text-white/60 mb-4">Issued by TechSchool</p>
-        <a href="https://www.linkedin.com/in/felipelimati/details/certifications/317966805/multiple-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ&treasuryMediaId=1635551282858" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
+       <img src="/cloud.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-xl font-semibold mb-3">Gen AI: Unlock Foundational Concepts</h3>
+        <p className="text-white/60 mb-4">Issued by Google Cloud</p>
+        <a href="https://www.linkedin.com/in/felipelimati/details/certifications/1765482831327/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
        <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
-       <img src="/javab.png" className="rounded-xl w-full h-70 object-cover mb-4" />
-        <h3 className="text-xl font-semibold mb-3">Curse Java Basic in Bradesco school</h3>
-        <p className="text-white/60 mb-4">Issued by fundation Bradesco</p>
-        <a href="https://www.linkedin.com/in/felipelimati/details/certifications/317966805/multiple-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ&treasuryMediaId=1635551282857" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
+       <img src="/cloud2.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-xl font-semibold mb-3">Gen AI: Beyond the Chatbot Review</h3>
+        <br></br>
+        <p className="text-white/60 mb-4">Issued by Google Cloud</p>
+        <a href="https://www.linkedin.com/in/felipelimati/details/certifications/1765482890441/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
         <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
-       <img src="/android.png" className="rounded-xl w-full h-70 object-cover mb-4" />
-        <h3 className="text-xl font-semibold mb-3">Curse aplications mobile with Android studio</h3>
-        <p className="text-white/60 mb-4">Issued by fundation Bradesco</p>
-        <a href="https://www.linkedin.com/in/felipelimati/details/certifications/317966805/multiple-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ&treasuryMediaId=1635551486649" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
+       <img src="/cloud3.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-xl font-semibold mb-3">Gen AI: Navigate the Landscape</h3>
+        <br></br>
+        <p className="text-white/60 mb-4">Issued by Google Cloud</p>
+        <a href="https://www.linkedin.com/in/felipelimati/details/certifications/1765483000172/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
         <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
-       <img src="/cyber.png" className="rounded-xl w-full h-70 object-cover mb-4" />
-        <h3 className="text-xl font-semibold mb-3">Curse information technology security </h3>
-        <p className="text-white/60 mb-4">Issued by fundation Bradesco</p>
-        <a href="https://www.linkedin.com/in/felipelimati/details/certifications/317966805/multiple-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ&treasuryMediaId=1635551284736" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
+       <img src="/cloud4.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-xl font-semibold mb-3">Gen AI Apps: Transform Your Work</h3>
+        <br></br>
+        <p className="text-white/60 mb-4">Issued by Google Cloud</p>
+        <a href="https://www.linkedin.com/in/felipelimati/overlay/1765483057540/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
         <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
-       <img src="/senac.png" className="rounded-xl w-full h-70 object-cover mb-4" />
-        <h3 className="text-xl font-semibold mb-3"> full course bulletin computer technician</h3>
-        <p className="text-white/60 mb-4">Issued by Senac</p>
-        <a href="https://www.linkedin.com/in/felipelimati/details/certifications/1635551282813/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
+       <img src="/cloud5.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-xl font-semibold mb-3">Gen AI Agents: Transform Your Organization</h3>
+        <p className="text-white/60 mb-4">Issued by Google Cloud</p>
+        <a href="https://www.linkedin.com/in/felipelimati/overlay/1765483125862/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
     </>
   )}
