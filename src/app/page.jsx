@@ -290,24 +290,25 @@ export default function Portfolio() {
     >
       See my Certifications
     </button>
-    <button
+  {/* <button
       onClick={() => setActiveTab("more")}
       className={`mt-5 h-10 border border-white/30 px-6 rounded-full 
       ${activeTab === "more" ? "bg-white/20" : ""}`}
     >
       See More projects
     </button>
+*/}
   </div>
         
-          <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-2"
+      <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-2"
            variants={fadeSlide}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-          >
-  {activeTab === "projects" && (
-    <>
-      {/*PROJETOS ATUAIS */}
+      >
+        {activeTab === "projects" && (
+        <>
+        {/*PROJETOS ATUAIS */}
       <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
         <img src="/port1.png" className="rounded-xl w-full h-70 object-cover mb-4" />
         <h3 className="text-2xl font-semibold mb-2">Self checkout for restaurants</h3>
@@ -349,9 +350,8 @@ export default function Portfolio() {
           Access
         </a>
       </div>
-    </>
-  )}
-
+      </>
+      )}
   {/* CERTIFICATIONS */}
   {activeTab === "certifications" && (
     <>
@@ -399,7 +399,7 @@ export default function Portfolio() {
   )}
 
   {/* MORE PROJECTS */}
-  {activeTab === "more" && (
+ {/* {activeTab === "more" && (
     <>
       <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
         <h3 className="text-xl font-semibold mb-3">Finance Dashboard</h3>
@@ -420,6 +420,7 @@ export default function Portfolio() {
       </div>
     </>
   )}
+*/}
 </motion.div>
           </div>
           <motion.div
