@@ -178,7 +178,7 @@ export default function Portfolio() {
             className="a"
           >
             <Image
-              src="/eu4.jpg"
+              src="/me4.png"
               alt="Foto de Perfil"
               width={350}
               height={180}
