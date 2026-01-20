@@ -338,15 +338,16 @@ export default function Portfolio() {
       </div>
 
       <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
-        <img src="/port3.png" className="rounded-xl w-full h-70 object-cover mb-4" />
-        <h3 className="text-2xl font-semibold mb-2">Scheduling for aesthetic clinic</h3>
+        <img src="/project3.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-2xl font-semibold mb-2">Mfitness-app</h3>
         <p className="text-white/70 mb-4">
-         A client appointment scheduling system for aesthetic clinics 
-         with scheduling, login, appointment consultation, and support channel. 
-         Perfect for aesthetic clinics with a scheduling system via WhatsApp as well.<br></br><br></br> 
-         Technologies used: NextJS, JavaScript, Tailwind CSS, Firebase.
+        An app with user login systems,
+         workout logging and results tracking, 
+         detailed calorie burn calculation, 
+         and a system for recording goals and achievements.<br></br><br></br> 
+         Technologies used: NextJS, TypeScript, JavaScript, Tailwind CSS, Firebase.
         </p>
-        <a href="https://clinica-estetica-seven.vercel.app/" className="w-40 mt-auto px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition">
+        <a href="https://fitness-app-three-pi.vercel.app/" className="w-40 mt-auto px-4 py-2 rounded-xl border border-white/20 hover:bg-white/10 transition">
           Access
         </a>
       </div>
