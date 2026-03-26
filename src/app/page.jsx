@@ -139,8 +139,8 @@ export default function Portfolio() {
               whileInView="show"
               viewport={{ amount: 0.2 }}
               className="text-gray-300 leading-relaxed mb-6">
-              Hi... I'm Felipe, <b className="text-blue-400">Full Stack Developer</b> passionate about technology and smart solutions
-              I work focusing on performance, responsiveness, and a good user experience
+              Hi... I'm Felipe, <b className="text-blue-400">Full Stack Developer</b>  My work is create applications focusing on performance, responsiveness, and a good user experience
+             
               <br></br>I am currently a computer science student at Estácio and I always seek to update myself with the latest technologies on the market to deliver the best possible result in each project
               I have experience with various technologies.<br></br><br></br>Next.js, TypeScript, Tailwind CSS, JavaScript, Python, MySQL e Firebase.<br></br>
             </motion.p>
@@ -178,7 +178,7 @@ export default function Portfolio() {
             className="a"
           >
             <Image
-              src="/me4.png"
+              src="/profile2.jpg"
               alt="Foto de Perfil"
               width={350}
               height={180}
