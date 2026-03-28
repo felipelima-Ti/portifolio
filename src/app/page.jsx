@@ -375,7 +375,7 @@ export default function Portfolio() {
        <img src="/cert3.webp" className="rounded-xl w-full h-70 object-cover mb-4" />
         <h3 className="text-xl font-semibold mb-3">Machine learning with the BairesDev</h3>
         <br></br>
-        <p className="text-white/60 mb-4">Issued by Google Cloud</p>
+        <p className="text-white/60 mb-4">Issued by DIO</p>
         <a href="https://www.linkedin.com/in/felipelimati/details/certifications/1765483000172/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
         <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
