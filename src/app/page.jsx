@@ -142,7 +142,7 @@ export default function Portfolio() {
               Hi... I'm Felipe, <b className="text-blue-400">Full Stack Developer</b>  My work is create applications focusing on performance, responsiveness, and a good user experience
              
               <br></br>I am currently a computer science student at Estácio and I always seek to update myself with the latest technologies on the market to deliver the best possible result in each project
-              I have experience with various technologies.<br></br><br></br>Next.js, TypeScript, Tailwind CSS, JavaScript, Python, MySQL e Firebase.<br></br>
+              I have experience with various technologies: Artificial intelligence | Network architecture | Programming.<br></br><br></br> tecnologies: Next.js | TypeScript | Tailwind CSS | JavaScript | Python | MySQL and Firebase.<br></br>
             </motion.p>
               <motion.div variants={fadeSlide} initial="hidden"whileInView="show" viewport={{once:true}} className="flex m-5 mb-10">
               <a href="https://www.linkedin.com/in/felipe-de-lima-belisario/" className="text-white hover:underline">
@@ -309,16 +309,15 @@ export default function Portfolio() {
         {activeTab === "projects" && (
         <>
         {/*PROJETOS ATUAIS */}
-        <Link href="https://restaurante-yw2v.vercel.app/">
+        <Link href="https://github.com/felipelima-Ti/discord-ai-bot">
       <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
-        <img src="/port1.png" className="rounded-xl w-full h-70 object-cover mb-4" />
-        <h3 className="text-2xl font-semibold mb-2">Self checkout for restaurants</h3>
+        <img src="/git.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-2xl font-semibold mb-2">Discord AI Bot</h3>
         <p className="text-white/70 mb-4">
-         A complete self-checkout system for orders,<br /> 
-         with an integrated system for delivery and in-store pickup, dynamic menu, shopping cart, 
-         and integrated checkout. Ideal for delivering pizza, snacks, or any other type of food.<br /><br /> 
-         Technologies used: NextJS, TypeScript, Tailwind CSS, Prisma.
+         An AI-powered bot for Discord servers, capable of answering questions, providing information, and enhancing user experience.<br /><br /> 
+         Technologies used: Python, Discord.py<br></br>Ollama(ai local), FastApi.
         </p>
+        <br></br><br></br>
       </div>
       </Link>
         <Link href="https://project-chamados.netlify.app/">
@@ -360,36 +359,36 @@ export default function Portfolio() {
       </div>
 
       <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
-       <img src="/cloud.png" className="rounded-xl w-full h-70 object-cover mb-4" />
-        <h3 className="text-xl font-semibold mb-3">Gen AI: Unlock Foundational Concepts</h3>
-        <p className="text-white/60 mb-4">Issued by Google Cloud</p>
+       <img src="/cert1.webp" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-xl font-semibold mb-3">Bioinspired machine learning methods</h3>
+        <p className="text-white/60 mb-4">Issued by DIO</p>
         <a href="https://www.linkedin.com/in/felipelimati/details/certifications/1765482831327/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
        <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
-       <img src="/cloud2.png" className="rounded-xl w-full h-70 object-cover mb-4" />
-        <h3 className="text-xl font-semibold mb-3">Gen AI: Beyond the Chatbot Review</h3>
+       <img src="/cert2.webp" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-xl font-semibold mb-3">introduction to machine learning</h3>
         <br></br>
-        <p className="text-white/60 mb-4">Issued by Google Cloud</p>
+        <p className="text-white/60 mb-4">Issued by DIO</p>
         <a href="https://www.linkedin.com/in/felipelimati/details/certifications/1765482890441/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
         <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
-       <img src="/cloud3.png" className="rounded-xl w-full h-70 object-cover mb-4" />
-        <h3 className="text-xl font-semibold mb-3">Gen AI: Navigate the Landscape</h3>
+       <img src="/cert3.webp" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-xl font-semibold mb-3">Machine learning with the BairesDev</h3>
         <br></br>
         <p className="text-white/60 mb-4">Issued by Google Cloud</p>
         <a href="https://www.linkedin.com/in/felipelimati/details/certifications/1765483000172/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
         <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
-       <img src="/cloud4.png" className="rounded-xl w-full h-70 object-cover mb-4" />
-        <h3 className="text-xl font-semibold mb-3">Gen AI Apps: Transform Your Work</h3>
+       <img src="/cyber.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-xl font-semibold mb-3">information technology security</h3>
         <br></br>
-        <p className="text-white/60 mb-4">Issued by Google Cloud</p>
+        <p className="text-white/60 mb-4">Issued by foundation Bradesco</p>
         <a href="https://www.linkedin.com/in/felipelimati/overlay/1765483057540/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
         <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
-       <img src="/cloud5.png" className="rounded-xl w-full h-70 object-cover mb-4" />
-        <h3 className="text-xl font-semibold mb-3">Gen AI Agents: Transform Your Organization</h3>
-        <p className="text-white/60 mb-4">Issued by Google Cloud</p>
+       <img src="/redes.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-xl font-semibold mb-3">Introduction to computer networks</h3>
+        <p className="text-white/60 mb-4">Issued by foundation Bradesco</p>
         <a href="https://www.linkedin.com/in/felipelimati/overlay/1765483125862/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
     </>
