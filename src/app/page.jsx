@@ -99,7 +99,7 @@ export default function Portfolio() {
   
          
            <Typewriter 
-        text="Full Stack Developer focused on creating modern, fast, and functional solutions."
+        text="Developer Focused on creating modern web applications, bots, and AI solutions to solve real-world problems."
         speed={20}
         className="flex flex-col mt-5 "
       />
@@ -139,10 +139,12 @@ export default function Portfolio() {
               whileInView="show"
               viewport={{ amount: 0.2 }}
               className="text-gray-300 leading-relaxed mb-6">
-              Hi... I'm Felipe, <b className="text-blue-400">Full Stack Developer</b>  My work is create applications focusing on performance, responsiveness, and a good user experience
+              Hi... I'm Felipe, <b className="text-blue-400">Full Stack Developer</b>i build modern applications, bots, and AI-powered solutions focused on solving real-world problems.
+              With experience in JavaScript, React,  I develop complete systems — from backend logic to intuitive user interfaces.
+
              
-              <br></br>I am currently a computer science student at Estácio and I always seek to update myself with the latest technologies on the market to deliver the best possible result in each project
-              I have experience with various technologies: Artificial intelligence | Network architecture | Programming.<br></br><br></br> tecnologies: Next.js | TypeScript | Tailwind CSS | JavaScript | Python | MySQL and Firebase.<br></br>
+              <br></br>I am currently a computer science student at Estácio and I am available for opportunities<br></br><br></br>
+              Tecnologies: Next.js | TypeScript | Tailwind CSS | JavaScript | Python | MySQL and Firebase.<br></br>
             </motion.p>
               <motion.div variants={fadeSlide} initial="hidden"whileInView="show" viewport={{once:true}} className="flex m-5 mb-10">
               <a href="https://www.linkedin.com/in/felipe-de-lima-belisario/" className="text-white hover:underline">
@@ -207,7 +209,7 @@ export default function Portfolio() {
           )}
         </motion.div>
         {/* SENIORIDADE */}
-        <section id="senioridade" className="">
+        {/*<section id="senioridade" className="">
           <hr className=" mb-40 w-full border-t border-gray-500" />
           <div className="max-w-7xl mx-auto">
           <motion.h2
@@ -262,6 +264,7 @@ export default function Portfolio() {
           </div>
           </div>
         </section>
+        */}
 
         {/* PROJETOS */}
         <motion.div
@@ -314,35 +317,38 @@ export default function Portfolio() {
         <img src="/git.png" className="rounded-xl w-full h-70 object-cover mb-4" />
         <h3 className="text-2xl font-semibold mb-2">Discord AI Bot</h3>
         <p className="text-white/70 mb-4">
-         An AI-powered bot for Discord servers, capable of answering questions, providing information, and enhancing user experience.<br /><br /> 
-         Technologies used: Python, Discord.py<br></br>Ollama(ai local), FastApi.
-        </p>
-        <br></br><br></br>
+          AI-powered Discord bot designed to enhance community interaction and automate support.
+          Built with Python and Discord.py, the bot integrates with a local AI model using Ollama, providing fast and accurate responses without relying on external APIs.
+          A custom API was developed using FastAPI, allowing efficient communication between the bot and the AI model.
+          Features include real-time question answering, task assistance, and automated user support within Discord servers.
+          </p>
+          <p className="mb-7">Technologies: Python, Discord.py, FastAPI, Ollama (Local AI)</p>
+        
+        <br></br>
       </div>
       </Link>
         <Link href="https://project-chamados.netlify.app/">
       <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
         <img src="/port4.png" className="rounded-xl w-full h-70 object-cover mb-4" />
         <h3 className="text-2xl font-semibold mb-2">Help desk for companies</h3>
-        <p className="text-white/70 mb-4">
-        A help desk ticketing system for large companies perfect for demand control, 
-        quick problem resolution, providing technical support and customer service in an effective 
-        and efficient manner.<br /> <br />
-        Technologies used: ReactJS, JavaScript, Tailwind CSS, Firebase. <br></br>
-        </p>
+      <p className="text-white/70 mb-4">
+        Help desk ticketing system built to manage and streamline support operations in companies.
+        The platform enables efficient ticket tracking, status management, and fast issue resolution, improving workflow and user support experience.
+        Developed as a full-stack application with real-time data handling using Firebase.
+      </p>
+<p className="mb-23">Tech stack: React, JavaScript, Tailwind CSS, Firebase.</p>
       </div>
       </Link>
       <Link href="https://fitness-app-three-pi.vercel.app/">
       <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
         <img src="/project3.png" className="rounded-xl w-full h-70 object-cover mb-4" />
         <h3 className="text-2xl font-semibold mb-2">Mfitness-app</h3>
-        <p className="text-white/70 mb-4">
-        An app with user login systems,
-         workout logging and results tracking, 
-         detailed calorie burn calculation, 
-         and a system for recording goals and achievements.<br></br><br></br> 
-         Technologies used: NextJS, TypeScript, JavaScript, Tailwind CSS, Firebase.
-        </p>
+      <p className="text-white/70 mb-4">
+        Full-stack fitness application built to track workouts, monitor performance, and provide personalized insights.
+        Implements a calorie burn calculation system based on user weight and workout duration, ensuring accurate and dynamic results for each session.
+        Features include user authentication, workout logging, progress tracking,training history and goal management.
+      </p>
+    <p className="mb-19">Tech stack: Next.js, TypeScript, JavaScript, Tailwind CSS, Firebase.</p>
       <br></br>
       </div>
       </Link>
@@ -352,23 +358,23 @@ export default function Portfolio() {
   {activeTab === "certifications" && (
     <>
       <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
-      <img src="/certificado.png" className="rounded-xl w-full h-70 object-cover mb-4" />
-        <h3 className="text-xl font-semibold mb-3">introduction a computer science CC50</h3>
-        <p className="text-white/60 mb-4">Issued by Harvard</p>
+        <img src="/certificado.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+          <h3 className="text-xl font-semibold mb-3">introduction a computer science CC50</h3>
+          <p className="text-white/60 mb-4">Issued by Harvard</p>
         <a href="https://www.linkedin.com/in/felipelimati/details/certifications/1763579911939/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
 
       <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
-       <img src="/cert1.webp" className="rounded-xl w-full h-70 object-cover mb-4" />
-        <h3 className="text-xl font-semibold mb-3">Bioinspired machine learning methods</h3>
+        <img src="/cert1.webp" className="rounded-xl w-full h-70 object-cover mb-4" />
+          <h3 className="text-xl font-semibold mb-3">Bioinspired machine learning methods</h3>
         <p className="text-white/60 mb-4">Issued by DIO</p>
-        <a href="https://www.linkedin.com/in/felipelimati/details/certifications/1765482831327/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
+      <a href="https://www.linkedin.com/in/felipelimati/details/certifications/1765482831327/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
        <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
-       <img src="/cert2.webp" className="rounded-xl w-full h-70 object-cover mb-4" />
-        <h3 className="text-xl font-semibold mb-3">introduction to machine learning</h3>
+          <img src="/cert2.webp" className="rounded-xl w-full h-70 object-cover mb-4" />
+          <h3 className="text-xl font-semibold mb-3">introduction to machine learning</h3>
         <br></br>
-        <p className="text-white/60 mb-4">Issued by DIO</p>
+          <p className="text-white/60 mb-4">Issued by DIO</p>
         <a href="https://www.linkedin.com/in/felipelimati/details/certifications/1765482890441/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
         <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
@@ -440,6 +446,9 @@ export default function Portfolio() {
         {/* CONTATO */}
         <section id="contato" className="max-w-6xl mx-auto">
           <p className="text-center text-3xl font-bold mb-20">Send me a message</p>
+           <p className="text-xl mb-5">Let's work together.
+Available for opportunities and freelance work
+</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-start">
           <motion.h2
             variants={fadeSlide}
