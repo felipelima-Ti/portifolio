@@ -33,18 +33,18 @@ export default function Portfolio() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+   //pega dados do formulario e depois trasforma em um objeto
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
 
     console.log(data);
-
+// envia os dados para nossa api e depois retorna os dados para o firebase
     const res = await fetch("/api/suporte", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     });
-
+//pega toda a resposta e depois verifica
     const result = await res.json();
     console.log(result);
 
@@ -55,8 +55,8 @@ export default function Portfolio() {
       alert("Error sending message.");
     }
   };
-
-  const techs = [
+ // tecnologias senioridade
+  /*const techs = [
     { name: "React", percent: 95 },
     { name: "TypeScript", percent: 85 },
     { name: "Tailwind", percent: 95 },
@@ -65,7 +65,9 @@ export default function Portfolio() {
     { name: "MySQL", percent: 85 },
     { name: "Firebase", percent: 60 },
   ];
+*/
 
+//efeito fade na pafina
   const fadeSlide = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { duration: 1 } },
@@ -323,7 +325,7 @@ export default function Portfolio() {
           Features include real-time question answering, task assistance, and automated user support within Discord servers.
           </p>
           <p className="mb-7">Technologies: Python, Discord.py, FastAPI, Ollama (Local AI)</p>
-        
+        <button className="bg-black text-white rounded-xl border p-2" href="https://github.com/felipelima-Ti/discord-ai-bot"><b>View code</b></button>
         <br></br>
       </div>
       </Link>
@@ -337,6 +339,7 @@ export default function Portfolio() {
         Developed as a full-stack application with real-time data handling using Firebase.
       </p>
 <p className="mb-23">Tech stack: React, JavaScript, Tailwind CSS, Firebase.</p>
+  <button className="bg-black text-white rounded-xl border p-2" href="https://github.com/felipelima-Ti/help-desk"><b>View code</b></button>
       </div>
       </Link>
       <Link href="https://fitness-app-three-pi.vercel.app/">
@@ -349,6 +352,7 @@ export default function Portfolio() {
         Features include user authentication, workout logging, progress tracking,training history and goal management.
       </p>
     <p className="mb-19">Tech stack: Next.js, TypeScript, JavaScript, Tailwind CSS, Firebase.</p>
+      <button className="bg-black text-white rounded-xl border p-2" href="https://github.com/felipelima-Ti/fitness-app"><b>View code</b></button>
       <br></br>
       </div>
       </Link>

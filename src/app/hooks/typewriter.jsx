@@ -6,7 +6,9 @@ export default function Typewriter({
   speed = 50,
   className = ""
 }) {
+  //efeito fade nos textos
   const [displayedText, setDisplayedText] = useState("");
+  //c
   useEffect(() => {
     let i = 0;
     const interval = setInterval(() => {
