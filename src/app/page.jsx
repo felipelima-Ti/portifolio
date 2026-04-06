@@ -305,7 +305,7 @@ export default function Portfolio() {
 */}
   </div>
         
-      <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-2"
+      <motion.div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-1"
            variants={fadeSlide}
             initial="hidden"
             whileInView="show"
@@ -314,7 +314,6 @@ export default function Portfolio() {
         {activeTab === "projects" && (
         <>
         {/*PROJETOS ATUAIS */}
-        <Link href="https://github.com/felipelima-Ti/discord-ai-bot">
       <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
         <img src="/git.png" className="rounded-xl w-full h-70 object-cover mb-4" />
         <h3 className="text-2xl font-semibold mb-2">Discord AI Bot</h3>
@@ -324,12 +323,10 @@ export default function Portfolio() {
           A custom API was developed using FastAPI, allowing efficient communication between the bot and the AI model.
           Features include real-time question answering, task assistance, and automated user support within Discord servers.
           </p>
-          <p className="mb-7">Technologies: Python, Discord.py, FastAPI, Ollama (Local AI)</p>
+          <p className="mb-3">Technologies: Python, Discord.py, FastAPI, Ollama (Local AI)</p>
         <button className="bg-black text-white rounded-xl border p-2" href="https://github.com/felipelima-Ti/discord-ai-bot"><b>View code</b></button>
-        <br></br>
+       
       </div>
-      </Link>
-        <Link href="https://project-chamados.netlify.app/">
       <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
         <img src="/port4.png" className="rounded-xl w-full h-70 object-cover mb-4" />
         <h3 className="text-2xl font-semibold mb-2">Help desk for companies</h3>
@@ -338,11 +335,23 @@ export default function Portfolio() {
         The platform enables efficient ticket tracking, status management, and fast issue resolution, improving workflow and user support experience.
         Developed as a full-stack application with real-time data handling using Firebase.
       </p>
-<p className="mb-23">Tech stack: React, JavaScript, Tailwind CSS, Firebase.</p>
-  <button className="bg-black text-white rounded-xl border p-2" href="https://github.com/felipelima-Ti/help-desk"><b>View code</b></button>
-      </div>
-      </Link>
-      <Link href="https://fitness-app-three-pi.vercel.app/">
+<p className="mb-19">Tech stack: React, JavaScript, Tailwind CSS, Firebase.</p>
+
+    <div className="flex">
+      <button
+  onClick={() => window.open("https://github.com/felipelima-Ti/help-desk")}
+  className="bg-black text-white rounded-xl border p-2 w-90"
+>
+  <b>View code</b>
+</button>
+      <button
+  onClick={() => window.open("https://project-chamados.netlify.app/")}
+  className="bg-black text-white rounded-xl border p-2 w-90 ml-2"
+>
+  <b>Demo</b>
+</button>
+    </div>
+      </div>  
       <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
         <img src="/project3.png" className="rounded-xl w-full h-70 object-cover mb-4" />
         <h3 className="text-2xl font-semibold mb-2">Mfitness-app</h3>
@@ -351,11 +360,23 @@ export default function Portfolio() {
         Implements a calorie burn calculation system based on user weight and workout duration, ensuring accurate and dynamic results for each session.
         Features include user authentication, workout logging, progress tracking,training history and goal management.
       </p>
-    <p className="mb-19">Tech stack: Next.js, TypeScript, JavaScript, Tailwind CSS, Firebase.</p>
-      <button className="bg-black text-white rounded-xl border p-2" href="https://github.com/felipelima-Ti/fitness-app"><b>View code</b></button>
-      <br></br>
-      </div>
-      </Link>
+    <p className="mb-12">Tech stack: Next.js, TypeScript, JavaScript, Tailwind CSS, Firebase.</p>
+    <div className="flex">
+      <button
+  onClick={() => window.open("https://github.com/felipelima-Ti/fitness-app")}
+  className="bg-black text-white rounded-xl border p-2 w-90"
+>
+  <b>View code</b>
+</button>
+    
+      <button
+  onClick={() => window.open("https://fitness-app-three-pi.vercel.app/")}
+  className="bg-black text-white rounded-xl border p-2 w-90 ml-2"
+>
+  <b>Demo</b>
+</button>
+    </div>
+      </div>  
       </>
       )}
   {/* CERTIFICATIONS */}
