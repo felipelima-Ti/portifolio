@@ -42,7 +42,9 @@ export default function Typewriter({
   }, [displayedText, isDeleting, currentText, speed, pause, texts.length]);
 
   return (
-    <p className={`font-sans text-lg  ${className}`}>
+    <p 
+    translate="no"
+    className={`font-sans text-lg  ${className}`}>
       <span className="">
         {displayedText}
         <span className="inline-block w-[2px] h-4 ml-1 bg-white shadow-[0_0_8px_#3b82f6] animate-blink"></span>

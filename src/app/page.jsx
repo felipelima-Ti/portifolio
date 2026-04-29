@@ -128,7 +128,7 @@ export default function Portfolio() {
           variants={fadeSlide}
           initial="hidden"
           whileInView="show"
-          viewport={{ amount: 0.2}}
+          viewport={{ amount: 0}}
         >
         <Link className="" href="#sobre">
         <button className=" mt-10 h-10 bg-gray-700 w-60 rounded-full hover:bg-gray-600 ">Know more about me</button>
@@ -147,7 +147,7 @@ export default function Portfolio() {
               variants={fadeSlide}
               initial="hidden"
               whileInView="show"
-              viewport={{ amount: 1 }}
+              viewport={{ amount: 0 }}
               className="text-3xl font-semibold mb-6 "
             >
               About Me
@@ -157,7 +157,7 @@ export default function Portfolio() {
               variants={fadeSlide2}
               initial="hidden"
               whileInView="show"
-              viewport={{ amount: 0.2 }}
+              viewport={{ amount: 0 }}
               className="text-gray-300 leading-relaxed mb-6">
               Hi... I'm Felipe, <b className="text-blue-400">Full Stack Developer</b>i build modern applications, bots, and AI-powered solutions focused on solving real-world problems.
               With experience in JavaScript, React,  I develop complete systems — from backend logic to intuitive user interfaces.
@@ -351,12 +351,12 @@ export default function Portfolio() {
        
       </div>
       <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
-        <img src="/port4.png" className="rounded-xl w-full h-70 object-cover mb-4" />
-        <h3 className="text-2xl font-semibold mb-2">Help desk for companies</h3>
+        <img src="/vic.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-2xl font-semibold mb-2">architecture and urban planning portfolio project</h3>
       <p className="text-white/70 mb-4">
-        Help desk ticketing system built to manage and streamline support operations in companies.
-        The platform enables efficient ticket tracking, status management, and fast issue resolution, improving workflow and user support experience.
-        Developed as a full-stack application with real-time data handling using Firebase.
+        A comprehensive portfolio project showcasing architectural and urban planning designs, concepts, and case studies.
+        The project includes detailed visual presentations, 3D models, and design narratives that highlight innovative approaches to urban development and architectural solutions.
+
       </p>
 <p className="mb-19">Tech stack: React, JavaScript, Tailwind CSS, Firebase.</p>
 
