@@ -362,13 +362,13 @@ export default function Portfolio() {
 
     <div className="flex">
       <button
-  onClick={() => window.open("https://github.com/felipelima-Ti/help-desk")}
+  onClick={() => window.open("https://github.com/felipelima-Ti/portifolioVicc")}
   className="bg-black text-white rounded-xl border p-2 w-90"
 >
   <b>View code</b>
 </button>
       <button
-  onClick={() => window.open("https://project-chamados.netlify.app/")}
+  onClick={() => window.open("https://portifolio-vic.vercel.app/")}
   className="bg-black text-white rounded-xl border p-2 w-90 ml-2"
 >
   <b>Demo</b>
