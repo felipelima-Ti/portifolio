@@ -67,12 +67,23 @@ export default function Portfolio() {
   ];
 */
 
-//efeito fade na pafina
+//efeito fade na pagina
   const fadeSlide = {
     hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 1 } },
+    show: { opacity: 1, y: 0, transition: { duration: 1,  delay: 0 } },
   };
-
+ const fadeSlide2 = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { duration: 1,  delay: 0.5} },
+  };
+  const fadeSlide3 = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { duration: 1,  delay: 0.7} },
+  };
+  const fadeSlide4 = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { duration: 1,  delay: 0.9} },
+  };
   return (
     <div className="bg-black text-white min-h-screen">
        <header className="fixed top-0 left-0 w-full bg-black text-white h-20 z-50 flex items-center justify-between px-6">
@@ -93,18 +104,25 @@ export default function Portfolio() {
            variants={fadeSlide}
            initial="hidden"
            whileInView="show"
-            viewport={{ amount: 0.2 }}
+            viewport={{ amount: 0 }}
             className="text-4xl md:text-6xl font-bold mt-80  drop-shadow-[0_0_10px_#3b82f6] drop-shadow-[0_0_20px_#3b82f6]"
           >
            FelipeLima Dev
           </motion.h1>
   
          
-           <Typewriter 
-        text="Developer Focused on creating modern web applications, bots, and AI solutions to solve real-world problems."
-        speed={20}
-        className="flex flex-col mt-5 "
-      />
+         <Typewriter
+  texts={[
+    "Developer Focused on creating modern web applications, bots, and AI solutions to solve real-world problems",
+    "Developer focused on modern web applications",
+    "Building bots and automation systems",
+    "Creating AI solutions for real problems",
+    "Transforming ideas into real products"
+  ]}
+  speed={20}
+  pause={2500}
+  className="flex flex-col mt-5"
+/>
         <div className="mb-90">
         <motion.div className="text-center justify-center"
           variants={fadeSlide}
@@ -129,14 +147,14 @@ export default function Portfolio() {
               variants={fadeSlide}
               initial="hidden"
               whileInView="show"
-              viewport={{ amount: 0.2 }}
+              viewport={{ amount: 1 }}
               className="text-3xl font-semibold mb-6 "
             >
               About Me
             </motion.h2>
 
             <motion.p
-              variants={fadeSlide}
+              variants={fadeSlide2}
               initial="hidden"
               whileInView="show"
               viewport={{ amount: 0.2 }}
@@ -148,9 +166,9 @@ export default function Portfolio() {
               <br></br>I am currently a computer science student at Estácio and I am available for opportunities<br></br><br></br>
               Tecnologies: Next.js | TypeScript | Tailwind CSS | JavaScript | Python | MySQL and Firebase.<br></br>
             </motion.p>
-              <motion.div variants={fadeSlide} initial="hidden"whileInView="show" viewport={{once:true}} className="flex m-5 mb-10">
+              <motion.div variants={fadeSlide3} initial="hidden"whileInView="show" viewport={{once:true}} className="flex m-5 mb-10">
               <a href="https://www.linkedin.com/in/felipe-de-lima-belisario/" className="text-white hover:underline">
-              <FaLinkedin size={28} className="text-gray-600 hover:text-white" />
+              <FaLinkedin variants={fadeSlide} size={28} className="text-gray-600 hover:text-white" />
             </a><br></br>
             <a href="https://github.com/felipelima-Ti" className="pl-5 hover:underline">
               <FaGithub size={28} className="text-gray-600 hover:underline hover:text-white" />
@@ -162,8 +180,9 @@ export default function Portfolio() {
               <FaWhatsapp size={28} className="text-gray-600 hover:text-white" />
             </a>
             </motion.div>
+            
             <motion.div
-              variants={fadeSlide}
+              variants={fadeSlide3}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true }}
@@ -175,7 +194,7 @@ export default function Portfolio() {
           </div>
 
           <motion.div
-            variants={fadeSlide}
+            variants={fadeSlide4}
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
@@ -192,8 +211,9 @@ export default function Portfolio() {
           </div>
         </section>
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          variants={fadeSlide3}
+          initial="hidden"
+          whileInView="show"
           transition={{ staggerChildren: 0.15 }}
           className=" ml-30 grid grid-cols-6 md:grid-cols-6 gap-6 mr-2 "
         >
@@ -201,8 +221,11 @@ export default function Portfolio() {
             (Icon, i) => (
               <motion.div
                 key={i}
+                initial="hidden"
+                whileInView="show"
                 whileHover={{ scale: 1.2 }}
                 className="text-4xl cursor-pointer text-blue-300 hover:text-blue transition"
+                variants={fadeSlide3}
               >
                 <Icon />
               </motion.div>
