@@ -89,7 +89,7 @@ export default function Portfolio() {
        <header className="fixed top-0 left-0 w-full bg-black text-white h-20 z-50 flex items-center justify-between px-6">
         <Image src="/back.png" alt="Logo" width={130} height={10} className=""/>
         <nav className="flex gap-2">
-          <Link className="text-white w-18 ml-2" href="#sobre">About me</Link>
+          <Link className="text-white w-20 ml-2" href="#sobre">About me</Link>
           <Link className="text-white" href="#projects">Projects</Link>
           <Link className="text-white" href="#contato">Contact</Link>
           
