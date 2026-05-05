@@ -400,6 +400,74 @@ export default function Portfolio() {
 </button>
     </div>
       </div>  
+        <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
+        <img src="/planet.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-2xl font-semibold mb-2">Planet-view</h3>
+        <p className="text-white/70 mb-4">
+         planet-view is a web application that provides real-time satellite imagery and geospatial data visualization. It allows users to explore high-resolution images of Earth, track weather patterns, and analyze environmental changes over time. The platform integrates various data sources, including satellite feeds and geographic information systems (GIS), to offer an interactive experience for researchers, educators, and space enthusiasts.
+          </p>
+          <p className="mb-3">Technologies: TypeScript, JavaScript, Tailwind CSS,Three.js</p>
+           <div className="flex">
+      <button
+  onClick={() => window.open("https://github.com/felipelima-Ti/planets-view")}
+  className="bg-black text-white rounded-xl border p-2 w-90"
+>
+  <b>View code</b>
+</button>
+      <button
+  onClick={() => window.open("https://planets-view.vercel.app/")}
+  className="bg-black text-white rounded-xl border p-2 w-90 ml-2"
+>
+  <b>Demo</b>
+</button>
+    </div>
+      </div>
+          <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
+        <img src="/sound.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-2xl font-semibold mb-2">Sound-Hand-synth</h3>
+        <p className="text-white/70 mb-4">
+        Sound-Hand-Synth is a web-based synthesizer application that utilizes the Web Audio API to create and manipulate sound in real-time. It features an intuitive interface that allows users to generate various sounds by interacting with virtual controls, such as oscillators, filters, and envelopes. The application provides a hands-on experience for music enthusiasts and developers interested in exploring sound synthesis and audio .
+          </p>
+          <p className="mb-3">Technologies: TypeScript,JavaScript, Tailwind CSS, Web Audio API,MediaPipe</p>
+           <div className="flex">
+      <button
+  onClick={() => window.open("https://github.com/felipelima-Ti/WebAudio-music")}
+  className="bg-black text-white rounded-xl border p-2 w-90"
+>
+  <b>View code</b>
+</button>
+      <button
+  onClick={() => window.open("https://web-audio-music.vercel.app/")}
+  className="bg-black text-white rounded-xl border p-2 w-90 ml-2"
+>
+  <b>Demo</b>
+</button>
+    </div>
+      </div>
+         <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20 flex flex-col">
+        <img src="/restaurante.png" className="rounded-xl w-full h-70 object-cover mb-4" />
+        <h3 className="text-2xl font-semibold mb-2">self-checkout restaurant</h3>
+        <p className="text-white/70 mb-4">
+        self-checkout restaurant is a web application that provides a seamless checkout experience for customers in a restaurant setting. It allows users to scan items, add them to their cart, and complete the payment process without the need for staff assistance. The application features a user-friendly interface and integrates with existing inventory management systems to ensure accurate stock tracking and real-time updates.
+          </p>
+          <p className="mb-3">Technologies: TypeScript,JavaScript, Tailwind CSS,prismaDB</p>
+           <div className="flex">
+      <button
+  onClick={() => window.open("https://github.com/felipelima-Ti/restaurante")}
+  className="bg-black text-white rounded-xl border p-2 w-90"
+>
+  <b>View code</b>
+</button>
+      <button
+  onClick={() => window.open("https://restaurante-yw2v.vercel.app/")}
+  className="bg-black text-white rounded-xl border p-2 w-90 ml-2"
+>
+  <b>Demo</b>
+</button>
+    </div>
+      </div>
+
+
       </>
       )}
   {/* CERTIFICATIONS */}
