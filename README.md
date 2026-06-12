@@ -1,32 +1,55 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=header&text=Felipe+lima+Dev&fontSize=40" />
+![header](https://capsule-render.vercel.app/api?type=waving&color=0A74DA&height=120&section=header)
+<div widht="100%" align="center" style="position: relative; text-align: center; color: white;">
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+   <p align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?size=28&color=0A74DA&center=true&vCenter=true&width=700&lines=+Olá,+eu+sou+o+Felipe;" />
+  </a>
+</p>
+  </div>
+</div>
+  <b>Tecnologias que uso</b>
+  <br/><br/>
+ <b>Frontend:</b>
+<br/><br/>
+<div style="display: inline_block">
+ <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" style="margin-right: 5px;" />&nbsp;
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" style="margin-right: 5px;" />&nbsp;
+<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" style="margin-right: 5px;" />
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com?color=00bfff&size=25&center=true&vCenter=true&width=600&lines=Desenvolvedor+Full+Stack</>)
+<br/>
 
-## Sobre mim
-<img src="https://avatars.githubusercontent.com/u/153960662?v=4" width="150" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" style="margin-right: 5px;" />&nbsp;
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" style="margin-right: 5px;" />&nbsp;
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" style="margin-right: 5px;" />
+</div>
+<br/>
+<b>Backend:</b>
+<br/><br/>
+<div style="display: inline_block">
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white" />&nbsp;
+<img src="https://img.shields.io/badge/Firebase-000000?style=for-the-badge&logo=firebase&logoColor=white" />
+  
+  </div>
+  <br/>
+<b>Outros:</b>
+<br/><br/>
+<div style="display: inline_block">
+<img src="https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white" style="margin-right: 5px;" />&nbsp;
+<img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" style="margin-right: 5px;" />
+</div>
+<br/>
+<br/>
+ <b>Onde me encontrar</b>
+<br/><br/>
 
-<p style="color:#00bfff;">desenvolvedor full-stack foco no design e na criaçao de web sites<br><br>Ciencias da Computaçao👨‍💻 3/8.</p>
-
----
-
-## Redes sociais
-
-<a href="https://www.linkedin.com/in/felipe-de-lima-belisario/">
-  <img src="https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white&style=for-the-badge">
+<a href="https://seuportfolio.com">
+  <img alt="Portfólio" src="https://img.shields.io/badge/Portfólio-000000?style=for-the-badge&logo=vercel&logoColor=white">
 </a>
+<br/><br/>
 
-<a href="https://www.instagram.com/felipelimahbl/">
-  <img src="https://img.shields.io/badge/-Instagram-E1306C?logo=instagram&logoColor=white&style=for-the-badge">
-</a>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/seu-perfil)
 
----
-
-## Contato rápido
-  E-mail: felipelima1114@gmail.com
-  <br>
-  <br>
-<a href="mailto:felipelima1114@gmail.com?subject=Contato%20via%20GitHub&body=Olá%2C%20Felipe!%20Estou%20entrando%20em%20contato%20pelo%20seu%20GitHub.">
-  <img src="https://img.shields.io/badge/Enviar%20mensagem-FF5722?style=for-the-badge" />
-</a>
-
----
+![snake gif](https://raw.githubusercontent.com/felipelima-Ti/felipelima-Ti/output/snake-dark.svg?palette=github-dark)
