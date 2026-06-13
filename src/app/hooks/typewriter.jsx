@@ -13,34 +13,48 @@ export default function Typewriter({
   const [isDeleting, setIsDeleting] = useState(false);
 
   const currentText = texts[textIndex];
+const [started, setStarted] = useState(false);
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setStarted(true);
+  }, 1000); // 1 segundo
 
-  useEffect(() => {
-    let timeout;
+  return () => clearTimeout(timer);
+}, []);
 
-    if (!isDeleting && displayedText.length < currentText.length) {
-      timeout = setTimeout(() => {
-        setDisplayedText(currentText.slice(0, displayedText.length + 1));
-      }, speed);
-    } 
-    else if (!isDeleting && displayedText.length === currentText.length) {
-      // pausa antes de apagar
-      timeout = setTimeout(() => setIsDeleting(true), pause);
-    } 
-    else if (isDeleting && displayedText.length > 0) {
-      // apagando
-      timeout = setTimeout(() => {
-        setDisplayedText(currentText.slice(0, displayedText.length - 1));
-      }, speed / 2);
-    } 
-    else if (isDeleting && displayedText.length === 0) {
-      // próximo texto
-      setIsDeleting(false);
-      setTextIndex((prev) => (prev + 1) % texts.length);
-    }
+useEffect(() => {
+  if (!started) return;
 
-    return () => clearTimeout(timeout);
-  }, [displayedText, isDeleting, currentText, speed, pause, texts.length]);
+  let timeout;
 
+  if (!isDeleting && displayedText.length < currentText.length) {
+    timeout = setTimeout(() => {
+      setDisplayedText(currentText.slice(0, displayedText.length + 1));
+    }, speed);
+  } 
+  else if (!isDeleting && displayedText.length === currentText.length) {
+    timeout = setTimeout(() => setIsDeleting(true), pause);
+  } 
+  else if (isDeleting && displayedText.length > 0) {
+    timeout = setTimeout(() => {
+      setDisplayedText(currentText.slice(0, displayedText.length - 1));
+    }, speed / 2);
+  } 
+  else if (isDeleting && displayedText.length === 0) {
+    setIsDeleting(false);
+    setTextIndex((prev) => (prev + 1) % texts.length);
+  }
+
+  return () => clearTimeout(timeout);
+}, [
+  started,
+  displayedText,
+  isDeleting,
+  currentText,
+  speed,
+  pause,
+  texts.length
+]);
   return (
     <p 
     translate="no"

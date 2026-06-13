@@ -68,17 +68,17 @@ export default function Portfolio() {
     return () => clearInterval(interval);
   }, []);
 */
-  function AnimatedBar({ percent }) {
-    return (
-      <motion.div
-        initial={{ width: 0 }}
-        whileInView={{ width: `${percent}%` }}
-        viewport={{ once: true, amount: 0.4 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-        className="h-4 rounded-full bg-gradient-to-r from-purple-400 via-purple-500 to-blue-800"
-      />
-    );
-  }
+  //function AnimatedBar({ percent }) {
+   // return (
+     // <motion.div
+      //  initial={{ width: 0 }}
+     //   whileInView={{ width: `${percent}%` }}
+     //   viewport={{ once: true, amount: 0.4 }}
+     //   transition={{ duration: 0.6, ease: "easeOut" }}
+    //    className="h-4 rounded-full bg-gradient-to-r from-purple-400 via-purple-500 to-blue-800"
+    //  />
+  //  );
+ // }
   
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const revealRef = useReveal();
