@@ -3,7 +3,7 @@
 import { FaPython } from "react-icons/fa";
 import { SiJavascript, SiMysql, SiTypescript, SiNextdotjs,SiReact } from "react-icons/si";
 import { motion} from "framer-motion";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import Image from "next/image";
 import { useReveal } from "@/app/hooks/useReveal";
 import Link from "next/link";
@@ -11,6 +11,63 @@ import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import Typewriter from "./hooks/typewriter";
 
 export default function Portfolio() {
+ /*  useEffect(() => {
+    const interval = setInterval(() => {
+      setNumero((prev) => {
+        if (prev >= 6) {
+          clearInterval(interval);
+          return prev;
+        }
+
+        return prev + 1;
+      });
+    }, 100); // velocidade da contagem
+
+    return () => clearInterval(interval);
+  }, []);
+   useEffect(() => {
+    const interval = setInterval(() => {
+      setNumero2((prev) => {
+        if (prev >= 100) {
+          clearInterval(interval);
+          return prev;
+        }
+
+        return prev + 1;
+      });
+    }, 200); // velocidade da contagem
+
+    return () => clearInterval(interval);
+  }, []);
+   useEffect(() => {
+    const interval = setInterval(() => {
+      setNumero3((prev) => {
+        if (prev >= 7) {
+          clearInterval(interval);
+          return prev;
+        }
+
+        return prev + 1;
+      });
+    }, 300); // velocidade da contagem
+
+    return () => clearInterval(interval);
+  }, []);
+   useEffect(() => {
+    const interval = setInterval(() => {
+      setNumero4((prev) => {
+        if (prev >= 7) {
+          clearInterval(interval);
+          return prev;
+        }
+
+        return prev + 1;
+      });
+    }, 400); // velocidade da contagem
+
+    return () => clearInterval(interval);
+  }, []);
+*/
   function AnimatedBar({ percent }) {
     return (
       <motion.div
@@ -29,8 +86,10 @@ export default function Portfolio() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
    const [activeTab, setActiveTab] = useState("projects"); 
-  // options: "projects", "certifications", "more"
-
+ // const [numero, setNumero] = useState(0);
+ // const [numero2, setNumero2] = useState(90);
+ // const [numero3, setNumero3] = useState(0);
+ // const [numero4, setNumero4] = useState(0);
   const handleSubmit = async (e) => {
     e.preventDefault();
    //pega dados do formulario e depois trasforma em um objeto
@@ -84,6 +143,7 @@ export default function Portfolio() {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { duration: 1,  delay: 0.9} },
   };
+  
   return (
     <div className="bg-black text-white min-h-screen">
        <header className="fixed top-0 left-0 w-full bg-black text-white h-20 z-50 flex items-center justify-between px-6">
@@ -100,17 +160,25 @@ export default function Portfolio() {
 
         {/* INTRODUÇÃO */}
         <section className="text-center justify-center">
+          <motion.div
+            variants={fadeSlide2}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ amount: 0 }}
+          >
+          <div className="border border-gray-500/40 p-1 text-center justify-center rounded-2xl max-w-7xl mx-auto mt-50 w-79 font-bold font-mono">
+              <p className="text-gray-500 text-sm "><span className="text-sm text-green-500 w-10 h-10 rounded-full mr-2">•</span>available for new opportunities</p>
+            </div>
+            </motion.div>
           <motion.h1
            variants={fadeSlide}
            initial="hidden"
            whileInView="show"
             viewport={{ amount: 0 }}
-            className="text-4xl md:text-6xl font-bold mt-80  drop-shadow-[0_0_10px_#3b82f6] drop-shadow-[0_0_20px_#3b82f6]"
+            className="text-4xl md:text-6xl font-bold drop-shadow-[0_0_10px_#3b82f6] drop-shadow-[0_0_20px_#3b82f6] mt-20"
           >
            FelipeLima Dev
           </motion.h1>
-  
-         
          <Typewriter
   texts={[
     "Developer Focused on creating modern web applications, bots, and AI solutions to solve real-world problems",
@@ -135,6 +203,28 @@ export default function Portfolio() {
         </Link>
         </motion.div>
         </div>
+ {/* <div className="grid grid-cols-2 md:grid-cols-4 md: mt-10 max-w-3xl mx-auto justify-items-center">
+  <div className="border-l w-[120px] text-left mb-10 pl-3">
+    <h1 className="text-2xl font-bold text-gray-400">{numero}+</h1>
+    <p className="text-gray-400 text-xs w-100">PROJECT DELIVERED</p>
+  </div>
+
+  <div className="border-l w-[120px] pl-3 mb-10">
+    <h1 className="text-2xl font-bold text-gray-400 text-left">{numero2}%</h1>
+    <p className="text-gray-400 text-sm text-left">Organic leads generated</p>
+  </div>
+
+  <div className="border-l w-[120px] pl-3 mb-10 text-left">
+    <h1 className="text-2xl font-bold text-gray-400 text-left">{numero3}+</h1>
+    <p className="text-gray-400 text-sm w-100">Test coverage</p>
+  </div>
+
+  <div className="border-l w-[120px] pl-3 mb-10 text-left">
+    <h1 className="text-2xl font-bold text-gray-400 text-left">{numero4}+</h1>
+    <p className="text-gray-400 text-sm w-100 ">Result increase</p>
+  </div>
+</div>
+ */}
         </section>
         <section id="sobre" className="items-center">
           <motion.hr className="mb-40 border-gray-500" variants={fadeSlide} initial="hidden"whileInView="show"viewport={{once:true}}></motion.hr>
