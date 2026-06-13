@@ -1,7 +1,7 @@
 "use client";
 
 import { FaPython } from "react-icons/fa";
-import { SiJavascript, SiMysql, SiTypescript, SiNextdotjs, SiFirebase } from "react-icons/si";
+import { SiJavascript, SiMysql, SiTypescript, SiNextdotjs,SiReact } from "react-icons/si";
 import { motion} from "framer-motion";
 import { useState } from "react";
 import Image from "next/image";
@@ -217,14 +217,14 @@ export default function Portfolio() {
           transition={{ staggerChildren: 0.15 }}
           className=" ml-30 grid grid-cols-6 md:grid-cols-6 gap-6 mr-2 "
         >
-          {[SiNextdotjs, SiJavascript, SiTypescript, FaPython, SiMysql, SiFirebase].map(
+          {[SiNextdotjs, SiJavascript, SiTypescript, FaPython,SiReact, SiMysql].map(
             (Icon, i) => (
               <motion.div
                 key={i}
                 initial="hidden"
                 whileInView="show"
                 whileHover={{ scale: 1.2 }}
-                className="text-4xl cursor-pointer text-blue-300 hover:text-blue transition"
+                className="text-4xl cursor-pointer text-gray-500 hover:text-gray-600 transition"
                 variants={fadeSlide3}
               >
                 <Icon />
