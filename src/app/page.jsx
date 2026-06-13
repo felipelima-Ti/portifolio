@@ -249,7 +249,7 @@ export default function Portfolio() {
               whileInView="show"
               viewport={{ amount: 0 }}
               className="text-gray-300 leading-relaxed mb-6">
-              Hi... I'm Felipe, <b className="text-blue-400">Full Stack Developer</b>i build modern applications, bots, and AI-powered solutions focused on solving real-world problems.
+              Hi... I'm Felipe, <b className="text-blue-400">Full Stack Developer</b> i build modern applications, bots, and AI-powered solutions focused on solving real-world problems.
               With experience in JavaScript, React,  I develop complete systems — from backend logic to intuitive user interfaces.
 
              
