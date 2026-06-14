@@ -250,10 +250,10 @@ export default function Portfolio() {
               viewport={{ amount: 0 }}
               className="text-gray-300 leading-relaxed mb-6">
               Hi... I'm Felipe, <b className="text-blue-400">Full Stack Developer</b> i build modern applications, bots, and AI-powered solutions focused on solving real-world problems.
-              With experience in JavaScript, React,  I develop complete systems — from backend logic to intuitive user interfaces.
+              With experience in machine learning I develop complete systems — from backend logic to intuitive user interfaces.
 
              
-              <br></br>I am currently a computer science student at Estácio and I am available for opportunities<br></br><br></br>
+              <br></br>I am currently a computer science student and I am available for opportunities<br></br><br></br>
               Tecnologies: Next.js | TypeScript | Tailwind CSS | JavaScript | Python | MySQL and Firebase.<br></br>
             </motion.p>
               <motion.div variants={fadeSlide3} initial="hidden"whileInView="show" viewport={{once:true}} className="flex m-5 mb-10">
@@ -444,7 +444,7 @@ export default function Portfolio() {
       <p className="text-white/70 mb-6 text-left mr-10">
          AI-powered Discord bot designed to enhance community interaction and automate support.
         Built with Python and Discord.py, the bot integrates with a local AI model using Ollama,
-        providing fast and accurate responses without relying on external APIs.
+        providing fast and accurate responses.
         A custom API was developed using FastAPI, allowing efficient communication between the bot
         and the AI model. Features include real-time question answering, task assistance, and
         automated user support within Discord servers.
@@ -469,7 +469,7 @@ export default function Portfolio() {
 </div>
     </div>
 
-<div className="bg-gray-700/30 p-5 justify-right text-right rounded-xl">
+<div className="bg-gray-700/30 p-4 justify-right text-right rounded-xl">
     {/* Imagem à direita */}
     <img
       src="/git.png"
@@ -498,13 +498,13 @@ export default function Portfolio() {
       </h3>
 
       <p className="text-white/70 mb-6 text-left mr-10">
-       A comprehensive portfolio project showcasing architectural and urban planning designs, concepts, and case studies.
-        The project includes detailed visual presentations, 3D models, and design narratives that highlight innovative approaches to urban development and architectural solutions.
+     
+Development of a responsive website for presenting architecture and urban planning projects. The system organizes projects in a modern interface, allowing the display of images, floor plans, renderings, and detailed descriptions. The project's focus was to create a sophisticated visual experience with intuitive navigation and minimalist design, providing a professional presentation of the work and solutions developed for different urban and architectural contexts.
       </p>
 
   <div className="flex flex-wrap gap-2 mb-4">
   <span className=" bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
-    React
+   Next.js 16
   </span>
    <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
     JavaScript
@@ -521,14 +521,14 @@ export default function Portfolio() {
   
     </div>
     
-<div className="justify-right text-right pb-7 rounded-xl">
+<div className=" bg-gray-700/40 justify-right text-right p-4 rounded-xl">
     {/* Imagem à direita */}
     <img
-      src="/vic.png"
+      src="/vicc2.png"
       alt="port vic"
       className="w-full md:w-130 h-90 object-cover rounded-xl shrink-0"
     />
-    <div className=" flex-right mt-5 mr-5 ">
+    <div className=" flex-right mt-5">
    <a className="bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://portifolio-vic.vercel.app/">
     View Demo
     </a>
@@ -552,42 +552,43 @@ export default function Portfolio() {
       </h3>
 
       <p className="text-white/70 mb-6 text-left mr-10">
+      developing in soon
+      <br></br>
      Full-stack fitness application built to track workouts, monitor performance, and provide personalized insights.
         Implements a calorie burn calculation system based on user weight and workout duration, ensuring accurate and dynamic results for each session.
         Features include user authentication, workout logging, progress tracking,training history and goal management.
       </p>
   <div className="flex flex-wrap gap-2 mb-4">
-    <span className=" bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
+     <span className=" bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
+    Next.js 16
+  </span>
+    <span className=" bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
     JavaScript
   </span>
-  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
-    React
-  </span>
-
-  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
    TypeScript
   </span>
 
-  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
     Tailwind CSS
   </span>
 </div>
   
     </div>
     
-<div className=" justify-right text-right pb-7">
+<div className="rounded-xl bg-gray-700/40 justify-right text-right p-4">
     <img
-      src="/project3.png"
+      src="/mfitness.png"
       alt="Fitness app"
       className="w-full md:w-130 h-90 object-cover rounded-xl shrink-0"
     />
     <div className=" flex-right mt-5">
-   <a className="bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://fitness-app-three-pi.vercel.app/">
+   {/*<a className="bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://fitness-app-three-pi.vercel.app/">
     View Demo
     </a>
-     <a className="ml-5 mr-5 bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://github.com/felipelima-Ti/fitness-app">
+     <a className="ml-5 bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://github.com/felipelima-Ti/fitness-app">
     View Code
-    </a>
+    </a>*/}
 </div>
     </div>
   </div>
@@ -606,24 +607,27 @@ export default function Portfolio() {
       </h3>
 
       <p className="text-white/70 mb-6 text-left mr-10">
-   planet-view is a web application that provides real-time satellite imagery and geospatial data visualization. It allows users to explore high-resolution images of Earth, track weather patterns, and analyze environmental changes over time. The platform integrates various data sources, including satellite feeds and geographic information systems (GIS), to offer an interactive experience for researchers, educators, and space enthusiasts.
+   planet-view is a web application that provides imagery and geospatial data visualization. It allows users to explore high-resolution images of Earth, track weather patterns, and analyze environmental changes over time, to offer an interactive experience for researchers, educators, and space enthusiasts.
       </p>
   <div className="flex flex-wrap gap-2 mb-4">
-    <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
+      <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
+    Next.js 16
+  </span>
+    <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
     Typescript
   </span>
-  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
    Tailwind CSS
   </span>
 
-  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
     Three.js
   </span>
 </div>
     </div>
-<div className=" justify-right text-right pb-7">
+<div className="rounded-xl bg-gray-700/40 justify-right text-right p-4">
     <img
-      src="/planet.png"
+      src="/planets.png"
       alt="Planets-view"
       className="w-full md:w-130 h-90 object-cover rounded-xl shrink-0"
     />
@@ -631,7 +635,7 @@ export default function Portfolio() {
     <a className="bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://planets-view.vercel.app/">
     View Demo
     </a>
-   <a className="ml-5 mr-5 bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://github.com/felipelima-Ti/planets-view">
+   <a className="ml-5 bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://github.com/felipelima-Ti/planets-view">
     View Code
     </a>
 </div>
@@ -653,29 +657,29 @@ export default function Portfolio() {
       </h3>
 
       <p className="text-white/70 mb-6 text-left mr-10">
-   Sound-Hand-Synth is a web-based synthesizer application that utilizes the Web Audio API to create and manipulate sound in real-time. It features an intuitive interface that allows users to generate various sounds by interacting with virtual controls, such as oscillators, filters, and envelopes. The application provides a hands-on experience for music enthusiasts and developers interested in exploring sound synthesis and audio
+   Sound-Hand-Synth is a web-based synthesizer application that utilizes the Web Audio API to create and manipulate sound in real-time. It features an intuitive interface that allows users to generate various sounds by interacting with virtual controls with hands, such as oscillators, filters. The application provides a hands-on experience for music enthusiasts and developers interested in exploring sound synthesis and audio
     </p>
   <div className="flex flex-wrap gap-2 mb-4">
-    <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
+    <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
     Typescript
   </span>
-  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
     JavaScript
   </span>
 
-  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
    Tailwind CSS
   </span>
 
-  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
     Web Audio API
   </span>
-  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
     Media Pipe
   </span>
 </div>
     </div>
-<div className=" justify-right text-right pb-7">
+<div className="rounded-xl bg-gray-700/40 justify-right text-right p-4">
     <img
       src="/sound.png"
       alt="sound"
@@ -685,7 +689,7 @@ export default function Portfolio() {
     <a className="bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://web-audio-music.vercel.app/">
     View Demo
     </a>
-      <a className="ml-5 mr-5 bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://github.com/felipelima-Ti/WebAudio-music">
+      <a className="ml-5  bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://github.com/felipelima-Ti/WebAudio-music">
     View Code
     </a>
 </div>
@@ -706,35 +710,36 @@ export default function Portfolio() {
       </h3>
 
       <p className="text-white/70 mb-6 text-left mr-10">
-  self-checkout restaurant is a web application that provides a seamless checkout experience for customers in a restaurant setting. It allows users to scan items, add them to their cart, and complete the payment process without the need for staff assistance. The application features a user-friendly interface and integrates with existing inventory management systems to ensure accurate stock tracking and real-time updates.
+  self-checkout restaurant is a web application that provides a seamless checkout experience for customers in a restaurant setting.add them to their cart, and complete the payment process without the need for staff assistance. The application features a user-friendly interface and integrates with 
+of the request and existing inventory management systems to ensure accurate stock tracking and real-time updates.
         </p>
     <div className="flex flex-wrap gap-2 mb-4">
-      <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
+      <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
          Typescript
       </span>
-      <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
+      <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
           JavaScript
       </span>
 
-        <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
+        <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
           Tailwind CSS
         </span>
 
-        <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
+        <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
           PRISMA DB
         </span>
-        <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
+        <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
            MySQL
         </span>
       </div>
     </div>
-<div className=" justify-right text-right mb-7">
+<div className=" rounded-xl bg-gray-700/40 justify-right text-right p-4">
     <img
-      src="/restaurante.png"
+      src="/fastburguer.png"
       alt="sound"
       className="w-full md:w-130 h-90 object-cover rounded-xl shrink-0"
     />
-    <div className=" flex-right mt-5 mr-5">
+    <div className=" flex-right mt-5 ">
     <a className=" bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://restaurante-yw2v.vercel.app/">
     View Demo
     </a>
@@ -745,8 +750,6 @@ export default function Portfolio() {
     </div>
   </div>
 </div>
-
-
       </>
       )}
   {/* CERTIFICATIONS */}
