@@ -256,7 +256,35 @@ export default function Portfolio() {
               <br></br>I am currently a computer science student and I am available for opportunities<br></br><br></br>
               Tecnologies: Next.js | TypeScript | Tailwind CSS | JavaScript | Python | MySQL and Firebase.<br></br>
             </motion.p>
-              <motion.div variants={fadeSlide3} initial="hidden"whileInView="show" viewport={{once:true}} className="flex m-5 mb-10">
+               <div className="flex gap-6">
+             {[SiNextdotjs, SiJavascript, SiTypescript, FaPython,SiReact, SiMysql].map(
+            (Icon, i) => (
+              <motion.div
+                key={i}
+                initial="hidden"
+                whileInView="show"
+                whileHover={{ scale: 1.2 }}
+                className="text-4xl cursor-pointer text-gray-500 hover:text-gray-600 transition"
+                variants={fadeSlide3}
+              >
+                <Icon />
+              </motion.div>
+
+            )
+          )}
+            </div>
+         
+            <motion.div
+              variants={fadeSlide3}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true }}
+            >
+            <Link href="#projects">
+              <button className=" mt-10 h-10 bg-gray-700 w-60 rounded-full">See my Projects</button>
+            </Link>
+            </motion.div>
+              <motion.div variants={fadeSlide3} initial="hidden"whileInView="show" viewport={{once:true}} className="flex m-5 mb-10 mt-10">
               <a href="https://www.linkedin.com/in/felipe-de-lima-belisario/" className="text-white hover:underline">
               <FaLinkedin variants={fadeSlide} size={28} className="text-gray-600 hover:text-white" />
             </a><br></br>
@@ -270,18 +298,8 @@ export default function Portfolio() {
               <FaWhatsapp size={28} className="text-gray-600 hover:text-white" />
             </a>
             </motion.div>
-            
-            <motion.div
-              variants={fadeSlide3}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true }}
-            >
-            <Link href="#projects">
-              <button className=" mt-10 h-10 bg-gray-700 w-60 rounded-full">See my Projects</button>
-            </Link>
-            </motion.div>
           </div>
+          
 
           <motion.div
             variants={fadeSlide4}
@@ -307,21 +325,7 @@ export default function Portfolio() {
           transition={{ staggerChildren: 0.15 }}
           className=" ml-30 grid grid-cols-6 md:grid-cols-6 gap-6 mr-2 "
         >
-          {[SiNextdotjs, SiJavascript, SiTypescript, FaPython,SiReact, SiMysql].map(
-            (Icon, i) => (
-              <motion.div
-                key={i}
-                initial="hidden"
-                whileInView="show"
-                whileHover={{ scale: 1.2 }}
-                className="text-4xl cursor-pointer text-gray-500 hover:text-gray-600 transition"
-                variants={fadeSlide3}
-              >
-                <Icon />
-              </motion.div>
-
-            )
-          )}
+         
         </motion.div>
         {/* SENIORIDADE */}
         {/*<section id="senioridade" className="">
