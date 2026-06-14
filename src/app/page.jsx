@@ -432,8 +432,8 @@ export default function Portfolio() {
   <div className="flex flex-col md:flex-row justify-between items-start ">
     
     {/* Tudo à esquerda */}
-    <div className="flex-1 ml-5">
-      <p className="pt-5 text-xs text-white mb-2 text-left">
+    <div className="flex-1 ml-10">
+      <p className="pt-10 text-xs text-white mb-2 text-left">
         AI-BOT
       </p>
 
@@ -451,19 +451,19 @@ export default function Portfolio() {
       </p>
 
   <div className="flex flex-wrap gap-2 mb-4">
-  <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className=" bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
     Python
   </span>
 
-  <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
     Discord.py
   </span>
 
-  <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
     FastAPI
   </span>
 
-  <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
     Ollama
   </span>
 </div>
@@ -488,8 +488,8 @@ export default function Portfolio() {
     <div className="flex flex-col md:flex-row justify-between items-start ">
     
     {/* Tudo à esquerda */}
-    <div className="flex-1 ml-5">
-      <p className="mt-5 text-xs text-white mb-2 text-left">
+    <div className="flex-1 ml-10">
+      <p className="mt-10 text-xs text-white mb-2 text-left">
         WEB-SITE
       </p>
 
@@ -503,32 +503,32 @@ export default function Portfolio() {
       </p>
 
   <div className="flex flex-wrap gap-2 mb-4">
-  <span className="border border-white/80 text-white rounded-xl px-2 py-2 text-xs">
+  <span className=" bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
     React
   </span>
-   <span className="border border-white/80 text-white rounded-xl px-2 py-2 text-xs">
+   <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
     JavaScript
   </span>
 
-  <span className="border border-white/80 text-white rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
    TypeScript
   </span>
 
-  <span className="border border-white/80 text-white rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-3 py-2 text-xs">
     Tailwind CSS
   </span>
 </div>
   
     </div>
     
-<div className="justify-right text-right p-5 rounded-xl">
+<div className="justify-right text-right pb-7 rounded-xl">
     {/* Imagem à direita */}
     <img
       src="/vic.png"
       alt="port vic"
       className="w-full md:w-130 h-90 object-cover rounded-xl shrink-0"
     />
-    <div className=" flex-right mt-5 ">
+    <div className=" flex-right mt-5 mr-5 ">
    <a className="bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://portifolio-vic.vercel.app/">
     View Demo
     </a>
@@ -538,12 +538,12 @@ export default function Portfolio() {
   </div>
   
 </div>
-  <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20">
+  <div className="bg-black/40 rounded-2xl shadow-xl border border-white/20">
   <div className="flex flex-col md:flex-row justify-between items-start ">
     
     {/* Tudo à esquerda */}
-    <div className="flex-1">
-      <p className="text-xs text-white mb-2 text-left">
+    <div className="flex-1 ml-10">
+      <p className="mt-10 text-xs text-white mb-2 text-left">
         WEB-APP
       </p>
 
@@ -557,25 +557,25 @@ export default function Portfolio() {
         Features include user authentication, workout logging, progress tracking,training history and goal management.
       </p>
   <div className="flex flex-wrap gap-2 mb-4">
-    <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+    <span className=" bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
     JavaScript
   </span>
-  <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
     React
   </span>
 
-  <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
    TypeScript
   </span>
 
-  <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
     Tailwind CSS
   </span>
 </div>
   
     </div>
     
-<div className=" justify-right text-right">
+<div className=" justify-right text-right pb-7">
     <img
       src="/project3.png"
       alt="Fitness app"
@@ -585,19 +585,19 @@ export default function Portfolio() {
    <a className="bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://fitness-app-three-pi.vercel.app/">
     View Demo
     </a>
-     <a className="ml-5 bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://github.com/felipelima-Ti/fitness-app">
+     <a className="ml-5 mr-5 bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://github.com/felipelima-Ti/fitness-app">
     View Code
     </a>
 </div>
     </div>
   </div>
 </div>
- <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20">
+ <div className="bg-black/40 rounded-2xl shadow-xl border border-white/20">
   <div className="flex flex-col md:flex-row justify-between items-start ">
     
     {/* Tudo à esquerda */}
-    <div className="flex-1">
-      <p className="text-xs text-white mb-2 text-left">
+    <div className="flex-1 ml-10">
+      <p className=" mt-10 text-xs text-white mb-2 text-left">
         WEB-SITE
       </p>
 
@@ -609,19 +609,19 @@ export default function Portfolio() {
    planet-view is a web application that provides real-time satellite imagery and geospatial data visualization. It allows users to explore high-resolution images of Earth, track weather patterns, and analyze environmental changes over time. The platform integrates various data sources, including satellite feeds and geographic information systems (GIS), to offer an interactive experience for researchers, educators, and space enthusiasts.
       </p>
   <div className="flex flex-wrap gap-2 mb-4">
-    <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+    <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
     Typescript
   </span>
-  <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
    Tailwind CSS
   </span>
 
-  <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
     Three.js
   </span>
 </div>
     </div>
-<div className=" justify-right text-right">
+<div className=" justify-right text-right pb-7">
     <img
       src="/planet.png"
       alt="Planets-view"
@@ -631,7 +631,7 @@ export default function Portfolio() {
     <a className="bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://planets-view.vercel.app/">
     View Demo
     </a>
-   <a className="ml-5 bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://github.com/felipelima-Ti/planets-view">
+   <a className="ml-5 mr-5 bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://github.com/felipelima-Ti/planets-view">
     View Code
     </a>
 </div>
@@ -639,12 +639,12 @@ export default function Portfolio() {
   </div>
 </div>
     
-      <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20">
-  <div className="flex flex-col md:flex-row justify-between items-start ">
+  <div className="bg-black/40 rounded-2xl shadow-xl border border-white/20">
+    <div className="flex flex-col md:flex-row justify-between items-start ">
     
     {/* Tudo à esquerda */}
-    <div className="flex-1">
-      <p className="text-xs text-white mb-2 text-left">
+    <div className="flex-1 ml-10">
+      <p className="mt-10 text-xs text-white mb-2 text-left">
         AI-WEB-APP
       </p>
 
@@ -656,26 +656,26 @@ export default function Portfolio() {
    Sound-Hand-Synth is a web-based synthesizer application that utilizes the Web Audio API to create and manipulate sound in real-time. It features an intuitive interface that allows users to generate various sounds by interacting with virtual controls, such as oscillators, filters, and envelopes. The application provides a hands-on experience for music enthusiasts and developers interested in exploring sound synthesis and audio
     </p>
   <div className="flex flex-wrap gap-2 mb-4">
-    <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+    <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
     Typescript
   </span>
-  <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
     JavaScript
   </span>
 
-  <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
    Tailwind CSS
   </span>
 
-  <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
     Web Audio API
   </span>
-  <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+  <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
     Media Pipe
   </span>
 </div>
     </div>
-<div className=" justify-right text-right">
+<div className=" justify-right text-right pb-7">
     <img
       src="/sound.png"
       alt="sound"
@@ -685,19 +685,19 @@ export default function Portfolio() {
     <a className="bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://web-audio-music.vercel.app/">
     View Demo
     </a>
-      <a className="ml-5 bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://github.com/felipelima-Ti/WebAudio-music">
+      <a className="ml-5 mr-5 bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://github.com/felipelima-Ti/WebAudio-music">
     View Code
     </a>
 </div>
     </div>
   </div>
 </div>
-    <div className="bg-black/40 rounded-2xl p-6 shadow-xl border border-white/20">
+    <div className="bg-black/40 rounded-2xl shadow-xl border border-white/20">
       <div className="flex flex-col md:flex-row justify-between items-start ">
     
     {/* Tudo à esquerda */}
-    <div className="flex-1">
-      <p className="text-xs text-white mb-2 text-left">
+    <div className="flex-1 ml-10">
+      <p className="mt-10 text-xs text-white mb-2 text-left">
         WEB-APP
       </p>
 
@@ -709,32 +709,32 @@ export default function Portfolio() {
   self-checkout restaurant is a web application that provides a seamless checkout experience for customers in a restaurant setting. It allows users to scan items, add them to their cart, and complete the payment process without the need for staff assistance. The application features a user-friendly interface and integrates with existing inventory management systems to ensure accurate stock tracking and real-time updates.
         </p>
     <div className="flex flex-wrap gap-2 mb-4">
-      <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+      <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
          Typescript
       </span>
-      <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+      <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
           JavaScript
       </span>
 
-        <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+        <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
           Tailwind CSS
         </span>
 
-        <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+        <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
           PRISMA DB
         </span>
-        <span className="border border-white text-white/70 rounded-xl px-2 py-2 text-xs">
+        <span className="bg-gray-700/35 border border-white/20 text-white/70 rounded-xl px-2 py-2 text-xs">
            MySQL
         </span>
       </div>
     </div>
-<div className=" justify-right text-right">
+<div className=" justify-right text-right mb-7">
     <img
       src="/restaurante.png"
       alt="sound"
       className="w-full md:w-130 h-90 object-cover rounded-xl shrink-0"
     />
-    <div className=" flex-right mt-5">
+    <div className=" flex-right mt-5 mr-5">
     <a className=" bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://restaurante-yw2v.vercel.app/">
     View Demo
     </a>
