@@ -3,7 +3,7 @@
 import { FaPython } from "react-icons/fa";
 import { SiJavascript, SiMysql, SiTypescript, SiNextdotjs,SiReact } from "react-icons/si";
 import { motion} from "framer-motion";
-import { useState,useEffect } from "react";
+import { useState} from "react";
 import Image from "next/image";
 import { useReveal } from "@/app/hooks/useReveal";
 import Link from "next/link";
@@ -328,7 +328,7 @@ export default function Portfolio() {
         </motion.div>
 
         {/* PROJETOS */}
-        
+
         <Projects/>
 
         <hr className="w-full border-t border-gray-500"></hr>
