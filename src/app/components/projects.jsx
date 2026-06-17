@@ -9,6 +9,10 @@ export default function Projects(){
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { duration: 1,  delay: 0 } },
   };
+    const fadeSlide2 = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { duration: 1,  delay: 0.2 } },
+  };
     return (
      <motion.div
          variants={fadeSlide}
@@ -46,7 +50,7 @@ export default function Projects(){
     </button>
 */}
   </div>
-        
+       
       <motion.div className="grid grid-cols-1 md:grid-cols-1 gap-6 p-1"
            variants={fadeSlide}
             initial="hidden"
@@ -56,6 +60,12 @@ export default function Projects(){
         {activeTab === "projects" && (
         <>
         {/*PROJETOS ATUAIS */}
+         <motion.div
+        variants={fadeSlide}
+        initial="hidden"
+        whileInView="show"
+        viewport={{once: true}}
+        >
  <div className="bg-black/40 rounded-2xl shadow-xl border border-white/20">
   <div className="flex flex-col md:flex-row justify-between items-start ">
     
@@ -112,6 +122,13 @@ export default function Projects(){
     </div>
   </div>
 </div>
+</motion.div>
+  <motion.div className="grid grid-cols-1 md:grid-cols-1 gap-6 p-1"
+           variants={fadeSlide2}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+      >
   <div className="bg-black/40 rounded-2xl shadow-xl border border-white/20">
     <div className="flex flex-col md:flex-row justify-between items-start ">
     
@@ -161,11 +178,16 @@ Development of a responsive website for presenting architecture and urban planni
     View Demo
     </a>
 </div>
-    </div>
-    
+    </div> 
   </div>
-  
 </div>
+</motion.div>
+ <motion.div className="grid grid-cols-1 md:grid-cols-1 gap-6 p-1"
+           variants={fadeSlide2}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+      >
   <div className="bg-black/40 rounded-2xl shadow-xl border border-white/20">
   <div className="flex flex-col md:flex-row justify-between items-start ">
     
@@ -221,6 +243,13 @@ Development of a responsive website for presenting architecture and urban planni
     </div>
   </div>
 </div>
+</motion.div>
+<motion.div className="grid grid-cols-1 md:grid-cols-1 gap-6 p-1"
+           variants={fadeSlide2}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+      >
  <div className="bg-black/40 rounded-2xl shadow-xl border border-white/20">
   <div className="flex flex-col md:flex-row justify-between items-start ">
     
@@ -270,7 +299,13 @@ Development of a responsive website for presenting architecture and urban planni
     </div>
   </div>
 </div>
-    
+</motion.div>
+    <motion.div className="grid grid-cols-1 md:grid-cols-1 gap-6 p-1"
+           variants={fadeSlide2}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+      >
   <div className="bg-black/40 rounded-2xl shadow-xl border border-white/20">
     <div className="flex flex-col md:flex-row justify-between items-start ">
     
@@ -324,6 +359,13 @@ Development of a responsive website for presenting architecture and urban planni
     </div>
   </div>
 </div>
+</motion.div>
+<motion.div className="grid grid-cols-1 md:grid-cols-1 gap-6 p-1"
+           variants={fadeSlide2}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+      >
     <div className="bg-black/40 rounded-2xl shadow-xl border border-white/20">
       <div className="flex flex-col md:flex-row justify-between items-start ">
     
@@ -378,6 +420,7 @@ of the request and existing inventory management systems to ensure accurate stoc
     </div>
   </div>
 </div>
+</motion.div>
       </>
       )}
   {/* CERTIFICATIONS */}
