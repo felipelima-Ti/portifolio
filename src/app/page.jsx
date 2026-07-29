@@ -308,12 +308,12 @@ export default function Portfolio() {
             viewport={{ once: true }}
             className="a"
           >
-            <Image
-              src="/profile2.jpg"
+            <img
+              src="/perfil.png"
               alt="Foto de Perfil"
-              width={350}
-              height={180}
-              className=" p-2 rounded-full shadow-lg border border-gray-600 translate-y-2 transtion-all duration-1000"
+              width={270}
+              height={600}
+              className="  rounded-xl border-2 border-gray-600 pl-4 pr-4 shadow-lg translate-y-2 transtion-all duration-1000"
             />
           </motion.div>
           </div>

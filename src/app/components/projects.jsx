@@ -233,12 +233,12 @@ Development of a responsive website for presenting architecture and urban planni
       className="w-full md:w-130 h-90 object-cover rounded-xl shrink-0"
     />
     <div className=" flex-right mt-5">
-   {/*<a className="bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://fitness-app-three-pi.vercel.app/">
+   <a className="bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://fitness-app-three-pi.vercel.app/">
     View Demo
     </a>
      <a className="ml-5 bg-gray-700/50 border border-white/40 p-3 rounded-xl hover:bg-gray-700/40" href="https://github.com/felipelima-Ti/fitness-app">
     View Code
-    </a>*/}
+    </a>
 </div>
     </div>
   </div>
