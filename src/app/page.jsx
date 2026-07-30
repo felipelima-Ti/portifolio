@@ -216,7 +216,7 @@ export default function Portfolio() {
             whileInView="show"
             viewport={{ amount: 0 }}
           >
-          <div className="border border-gray-500/40 p-1 text-center justify-center rounded-2xl max-w-7xl mx-auto mt-50 w-79 font-bold font-mono">
+          <div className="border border-gray-500/40 p-1 text-center justify-center rounded-2xl max-w-7xl mx-auto md:mt-50 mt-20 w-79 font-bold font-mono">
               <p className="text-gray-500 text-sm "><span className="text-sm text-green-500 w-10 h-10 rounded-full mr-2">•</span>available for new opportunities</p>
             </div>
             </motion.div>
@@ -241,7 +241,7 @@ export default function Portfolio() {
   pause={2500}
   className="flex flex-col mt-5"
 />
-        <div className="mb-83 md:mb-90">
+        <div className="mb-90 md:mb-90">
         <motion.div className="text-center justify-center"
           variants={fadeSlide}
           initial="hidden"
@@ -254,7 +254,7 @@ export default function Portfolio() {
         </motion.div>
          
         </div>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/70 animate-float">
+        <div className="absolute bottom-7 left-1/2 -translate-x-1/2 text-white/70 animate-float">
           <div className="h-9 w-[0px] bg-white/60"/>
           <FaArrowDown className="text-gray-600/80 mx-auto h-8 w-6 animate-bounce" />
         </div>
