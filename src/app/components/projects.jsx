@@ -26,10 +26,10 @@ export default function Projects(){
           <hr className="mb-40 border-gray-500"></hr>
           <h2 className="text-4xl font-bold mb-10 md:ml-62">Projects | Certifications</h2>
           <div className=" p-0 rounded-2xl max-w-7xl mx-auto p-0 ">
-         <div className="flex flex-wrap items-center justify-center gap-6 p-6">
+         <div className="flex flex-wrap items-center justify-center gap-2 p-6">
     <button
       onClick={() => setActiveTab("projects")}
-      className={`mt-5 h-10 border border-white/30 px-6 rounded-full 
+      className={`mt-5 h-10 border w-35 border-white/30 px-6 rounded-xl
       ${activeTab === "projects" ? "bg-white/20" : ""}`}
     >
     Projects
@@ -37,7 +37,7 @@ export default function Projects(){
 
     <button
       onClick={() => setActiveTab("certifications")}
-      className={`mt-5 h-10 border border-white/30 px-6 rounded-full
+      className={`mt-5 h-10 border border-white/30 px-6 rounded-xl
       ${activeTab === "certifications" ? "bg-white/20" : ""}`}
     >
     Certifications
@@ -438,35 +438,35 @@ of the request and existing inventory management systems to ensure accurate stoc
         <img src="/cert1.webp" className="rounded-xl w-full h-70 object-cover mb-4" />
           <h3 className="text-xl font-semibold mb-3">Bioinspired machine learning methods</h3>
         <p className="text-white/60 mb-4">Issued by DIO</p>
-      <a href="https://www.linkedin.com/in/felipelimati/details/certifications/1765482831327/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
+      <a href="https://www.linkedin.com/in/felipelimati/overlay/Certifications/1356678006/treasury/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
        <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
           <img src="/cert2.webp" className="rounded-xl w-full h-70 object-cover mb-4" />
           <h3 className="text-xl font-semibold mb-3">introduction to machine learning</h3>
         <br></br>
           <p className="text-white/60 mb-4">Issued by DIO</p>
-        <a href="https://www.linkedin.com/in/felipelimati/details/certifications/1765482890441/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
+        <a href="https://www.linkedin.com/in/felipelimati/overlay/Certifications/1356173580/treasury/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
         <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
        <img src="/cert3.webp" className="rounded-xl w-full h-70 object-cover mb-4" />
         <h3 className="text-xl font-semibold mb-3">Machine learning with the BairesDev</h3>
         <br></br>
         <p className="text-white/60 mb-4">Issued by DIO</p>
-        <a href="https://www.linkedin.com/in/felipelimati/details/certifications/1765483000172/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
+        <a href="https://www.linkedin.com/in/felipelimati/overlay/Certifications/1357239784/treasury/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
         <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
        <img src="/cyber.png" className="rounded-xl w-full h-70 object-cover mb-4" />
         <h3 className="text-xl font-semibold mb-3">information technology security</h3>
         <br></br>
         <p className="text-white/60 mb-4">Issued by foundation Bradesco</p>
-        <a href="https://www.linkedin.com/in/felipelimati/overlay/1765483057540/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
+        <a href="https://www.linkedin.com/in/felipelimati/overlay/Certifications/317966805/image-list/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
         <div className="bg-black/40 p-6 rounded-2xl border border-white/20">
        <img src="/redes.png" className="rounded-xl w-full h-70 object-cover mb-4" />
         <h3 className="text-xl font-semibold mb-3">Introduction to computer networks</h3>
         <br></br>
         <p className="text-white/60 mb-4">Issued by foundation Bradesco</p>
-        <a href="https://www.linkedin.com/in/felipelimati/overlay/1765483125862/single-media-viewer/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
+        <a href="https://www.linkedin.com/in/felipelimati/overlay/Certifications/317966805/image-list/?profileId=ACoAAEJr4EMBgQXoTYTDtsjthwIfqvDjkanOdzQ" className="border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10">View Certificate</a>
       </div>
     </>
   )}
