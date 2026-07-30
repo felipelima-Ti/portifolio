@@ -13,6 +13,7 @@ export default function Projects(){
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { duration: 1,  delay: 0.2 } },
   };
+  
     return (
      <motion.div
          variants={fadeSlide}
@@ -23,7 +24,7 @@ export default function Projects(){
         >
         <section id="projects" className="py-10">
           <hr className="mb-40 border-gray-500"></hr>
-          <h2 className="text-4xl font-bold mb-10 text-center">Projects</h2>
+          <h2 className="text-4xl font-bold mb-10 md:ml-62">Projects | Certifications</h2>
           <div className=" p-0 rounded-2xl max-w-7xl mx-auto p-0 ">
          <div className="flex flex-wrap items-center justify-center gap-6 p-6">
     <button

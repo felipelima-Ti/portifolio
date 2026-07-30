@@ -7,9 +7,10 @@ import { useState} from "react";
 import Image from "next/image";
 import { useReveal } from "@/app/hooks/useReveal";
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaWhatsapp,FaArrowDown } from "react-icons/fa";
 import Typewriter from "./hooks/typewriter";
 import Projects from "./components/projects";
+import { Menu, X } from "lucide-react";
 export default function Portfolio() {
  /*  useEffect(() => {
     const interval = setInterval(() => {
@@ -114,6 +115,7 @@ export default function Portfolio() {
       alert("Error sending message.");
     }
   };
+  
  // tecnologias senioridade
   /*const techs = [
     { name: "React", percent: 95 },
@@ -143,23 +145,71 @@ export default function Portfolio() {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { duration: 1,  delay: 0.9} },
   };
+  const [menuOpen, setMenuOpen] = useState(false); 
   
   return (
     <div className="bg-black text-white min-h-screen">
        <header className="fixed top-0 left-0 w-full bg-black text-white h-20 z-50 flex items-center justify-between px-6">
         <Image src="/back.png" alt="Logo" width={130} height={10} className=""/>
-        <nav className="flex gap-2">
-          <Link className="text-white w-20 ml-2" href="#sobre">About me</Link>
-          <Link className="text-white" href="#projects">Projects</Link>
-          <Link className="text-white" href="#contato">Contact</Link>
-          
-        </nav>
+        <nav className="flex items-center gap-6">
+       <ul className="hidden gap-10 text-sm md:flex ">
+      {[
+        ["About me", "#sobre"],
+        ["Projects", "#projects"],
+        ["Contact", "#contato"],
+      ].map(([label, href]) => (
+        <li key={href}>
+          <a
+            href={href}
+            className=" text-white mr-5 text-base text-foreground/70 transition-smooth hover:text-foreground"
+          >
+            {label}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    {/* Botão Mobile */}
+    <button
+      onClick={() => setMenuOpen(!menuOpen)}
+      className="md:hidden"
+    >
+      {menuOpen ? (
+        <X className="h-6 w-6" />
+      ) : (
+        <Menu className="h-6 w-6" />
+      )}
+    </button>
+  </nav>
+
+  {/* Menu Mobile */}
+  {menuOpen && (
+    <div className="md:hidden border-t border-border bg-gray-700/20 backdrop-blur-md absolute top-20 left-0 w-full z-50">
+      <ul className="flex flex-col p-4">
+        {[
+          ["About me", "#sobre"],
+          ["Projects", "#projects"],
+          ["Contact", "#contato"],
+        ].map(([label, href]) => (
+          <li key={href}>
+            <a
+              href={href}
+              onClick={() => setMenuOpen(false)}
+              className="block py-3 text-foreground/80 hover:text-primary"
+            >
+              {label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
       </header>
 
       <main className="min-h-screen w-full bg-black text-white px-6 md:px-20 py-16 space-y-32 font-sans">
 
         {/* INTRODUÇÃO */}
-        <section className="text-center justify-center">
+        <section className="mt-13 text-center justify-center overflow-hidden">
           <motion.div
             variants={fadeSlide2}
             initial="hidden"
@@ -202,6 +252,11 @@ export default function Portfolio() {
         <button className=" mt-10 h-10 bg-gray-700 w-60 rounded-full hover:bg-gray-600 ">Know more about me</button>
         </Link>
         </motion.div>
+         
+        </div>
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/70 animate-float">
+          <div className="h-12 w-[0px] bg-white/60" />
+          <FaArrowDown className="text-gray-600/80 mx-auto h-8 w-6 animate-bounce" />
         </div>
  {/* <div className="grid grid-cols-2 md:grid-cols-4 md: mt-10 max-w-3xl mx-auto justify-items-center">
   <div className="border-l w-[120px] text-left mb-10 pl-3">
@@ -227,7 +282,7 @@ export default function Portfolio() {
  */}
         </section>
         <section id="sobre" className="items-center">
-          <motion.hr className="mb-40 border-gray-500" variants={fadeSlide} initial="hidden"whileInView="show"viewport={{once:true}}></motion.hr>
+          <motion.hr className="mt-50 mb-40 border-gray-500" variants={fadeSlide} initial="hidden"whileInView="show"viewport={{once:true}}></motion.hr>
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-30">
         
         {/* SOBRE MIM */}
@@ -306,7 +361,7 @@ export default function Portfolio() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="a"
+            className=""
           >
             <img
               src="/perfil.png"
@@ -315,6 +370,9 @@ export default function Portfolio() {
               height={600}
               className="  rounded-xl border-2 border-gray-600 pl-4 pr-4 shadow-lg translate-y-2 transtion-all duration-1000"
             />
+            <p className=" mt-5 text-center text-gray-500 text-sm">
+            Software Developer - Full Stack
+            </p>
           </motion.div>
           </div>
         </section>
