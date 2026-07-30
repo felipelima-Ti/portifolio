@@ -206,7 +206,7 @@ export default function Portfolio() {
   )}
       </header>
 
-      <main className="min-h-screen w-full bg-black text-white px-6 md:px-20 py-16 space-y-32 font-sans">
+      <main className="min-h-screen w-full bg-black text-white px-6 md:px-20 py-16 font-sans">
 
         {/* INTRODUÇÃO */}
         <section className="mt-13 text-center justify-center overflow-hidden">
@@ -241,7 +241,7 @@ export default function Portfolio() {
   pause={2500}
   className="flex flex-col mt-5"
 />
-        <div className="mb-90">
+        <div className="mb-83 md:mb-90">
         <motion.div className="text-center justify-center"
           variants={fadeSlide}
           initial="hidden"
@@ -255,7 +255,7 @@ export default function Portfolio() {
          
         </div>
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/70 animate-float">
-          <div className="h-12 w-[0px] bg-white/60" />
+          <div className="h-9 w-[0px] bg-white/60"/>
           <FaArrowDown className="text-gray-600/80 mx-auto h-8 w-6 animate-bounce" />
         </div>
  {/* <div className="grid grid-cols-2 md:grid-cols-4 md: mt-10 max-w-3xl mx-auto justify-items-center">
@@ -281,8 +281,9 @@ export default function Portfolio() {
 </div>
  */}
         </section>
-        <section id="sobre" className="items-center">
-          <motion.hr className="mt-50 mb-40 border-gray-500" variants={fadeSlide} initial="hidden"whileInView="show"viewport={{once:true}}></motion.hr>
+        
+        <section id="sobre" className="items-center md:mb-60 ">
+          <motion.hr className="md:mt-25 mb-40 border-gray-500" variants={fadeSlide} initial="hidden"whileInView="show"viewport={{once:true}}></motion.hr>
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-30">
         
         {/* SOBRE MIM */}
@@ -393,7 +394,7 @@ export default function Portfolio() {
         
         {/* CONTATO */}
         <section id="contato" className="max-w-6xl mx-auto">
-          <p className="text-center text-3xl font-bold mb-20">Send me a message</p>
+          <p className=" text-center mt-20  text-center text-3xl font-bold mb-20">Send me a message</p>
            <p className="text-xl mb-5">Let's work together.
 Available for opportunities and freelance work
 </p>
