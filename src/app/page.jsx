@@ -341,7 +341,7 @@ export default function Portfolio() {
             </Link>
             </motion.div>
               <motion.div variants={fadeSlide3} initial="hidden"whileInView="show" viewport={{once:true}} className="flex m-5 mb-10 mt-10">
-              <a href="https://www.linkedin.com/in/felipe-de-lima-belisario/" className="text-white hover:underline">
+              <a href="https://www.linkedin.com/in/felipelimati" className="text-white hover:underline">
               <FaLinkedin variants={fadeSlide} size={28} className="text-gray-600 hover:text-white" />
             </a><br></br>
             <a href="https://github.com/felipelima-Ti" className="pl-5 hover:underline">
@@ -413,7 +413,7 @@ Available for opportunities and freelance work
                 <p className="text-xl">Redes sociais</p>
       
            <div className="flex mt-2 mb-10 flex ">
-            <a href="https://www.linkedin.com/in/felipe-de-lima-belisario/" className="text-blue-400 hover:underline flex flex-col items-start text-sm">Linkedin
+            <a href="https://www.linkedin.com/in/felipelimati" className="text-blue-400 hover:underline flex flex-col items-start text-sm">Linkedin
               <FaLinkedin size={24} className="text-blue-700" />
             </a>
             <a href="https://github.com/felipelima-Ti" className="pl-5 hover:underline text-sm">Github
