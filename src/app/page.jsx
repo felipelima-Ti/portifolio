@@ -365,11 +365,11 @@ export default function Portfolio() {
             className=""
           >
             <img
-              src="/perfil.png"
+              src="/photo3.png"
               alt="Foto de Perfil"
-              width={270}
+              width={300}
               height={600}
-              className="  rounded-xl border-2 border-gray-600 pl-4 pr-4 shadow-lg translate-y-2 transtion-all duration-1000"
+              className="  rounded-xl border-2 border-gray-600/30 pl-4 pr-4 shadow-lg translate-y-2 transtion-all duration-1000"
             />
             <p className=" mt-5 text-center text-gray-500 text-sm">
             Software Developer - Full Stack
