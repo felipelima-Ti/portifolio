@@ -393,12 +393,10 @@ export default function Portfolio() {
         <hr className="w-full border-t border-gray-500"></hr>
         
         {/* CONTATO */}
-        <section id="contato" className="max-w-6xl mx-auto">
-          <p className=" text-center mt-20  text-center text-3xl font-bold mb-20">Send me a message</p>
-           <p className="text-xl mb-5">Let's work together.
-Available for opportunities and freelance work
-</p>
+        <section id="contato" className=" mt-40 max-w-6xl mx-auto">
+       
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 justify-start">
+            
           <motion.h2
             variants={fadeSlide}
             initial="hidden"
@@ -406,11 +404,15 @@ Available for opportunities and freelance work
             viewport={{ once: true }}
             className="text-3xl  mb-10"
           >
+               <p className=" mt-20 text-3xl font-bold mb-10">Send me a message</p>
+           <p className="text-xl mb-5">Let's work together.
+Available for opportunities and <br></br>freelance work
+</p>
               <p className="text-xl mt-5">Contact me for</p>
                <p className="text-sm mt-10 text-gray-500">Email: Felipelima1114@gmail.com</p>
                 <p className="text-sm text-gray-500">Telephone: +32988934044</p>
                 <br></br>
-                <p className="text-xl">Redes sociais</p>
+                <p className="text-xl mb-5">Social media</p>
       
            <div className="flex mt-2 mb-10 flex ">
             <a href="https://www.linkedin.com/in/felipelimati" className="text-blue-400 hover:underline flex flex-col items-start text-sm">Linkedin
@@ -433,7 +435,7 @@ Available for opportunities and freelance work
             whileInView="show"
             viewport={{ once: true }}
           className="">
-            <p className="ml-5">Send me a message and I will reply within 24 hours</p>
+            <p className="mt-20 ml-2">fill out the form and I will reply within 24 hours</p>
             <br></br>
           <form onSubmit={handleSubmit} className=" space-y-6">
             <input
