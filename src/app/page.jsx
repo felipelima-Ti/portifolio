@@ -365,7 +365,7 @@ export default function Portfolio() {
             className=""
           >
             <img
-              src="/miphotoa.png"
+              src="/perfilphoto.png"
               alt="Foto de Perfil"
               width={270}
               height={600}
